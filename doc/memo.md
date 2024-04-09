@@ -2,42 +2,31 @@
 # doc-tech
 
 
-## doc-tech.co
-
-- merge
-
-
-
 ## os win
 
 setup 
 - memo write
+  - rough
 
-os/win/env-setup/win11/win11-env-setup.md
+
+
+## whole
+
+file inside
+- txt > md
+
 
 
 ## pwsh
 
-function
-- override
 
 
-ln
-- cre
-
-
-
-## git config
+## git
 
 
 
 ## unix cmd
 
-
-
-## zenpan < english ??
-
-file inside, txt > md
 
 
 

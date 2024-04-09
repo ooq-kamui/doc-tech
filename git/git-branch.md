@@ -2,7 +2,7 @@
 # git branch
 
 
-## branch list を表示
+## branch list, および 現在の branch を表示
 
 ```
 git branch

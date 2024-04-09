@@ -1,25 +1,68 @@
 
-# config
+# git config
 
 
-# config file path
+## config file path
 
 ```
-system  /etc/gitconfig
-global  ~/.gitconfig
 local   repo/.git/config
+global  ~/.gitconfig
+system  /etc/gitconfig ( os によって dir は異なる )
 ```
 
 
-## user.name, email setting
+## 基本
+
+global の 確認, 設定
 
 ```
-git config --global user.name  "kamui"
-git config --global user.email "ooq-kamui@gmail.com"
+git config --global xxx xxx
+```
+
+local  の 確認, 設定
+
+```
+git config --local  xxx xxx
+```
+
+local の場合は 省略してもよい
+
+```
+git config xxx xxx
+```
 
 
-git config --local user.name  "kamui"
-git config --local user.email "ooq-kamui@gmail.com"
+
+## 現在の設定を表示
+
+```
+git config --list
+```
+
+
+## user.name を設定する
+
+```
+git config user.name "ooq kamui"
+```
+
+確認
+
+```
+git config user.name
+```
+
+
+## user.email を設定する
+
+```
+git config user.email "kamui@kamui.com"
+```
+
+確認
+
+```
+git config user.email
 ```
 
 

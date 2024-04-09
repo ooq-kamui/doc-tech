@@ -8,6 +8,20 @@
 ことができる
 
 
+基本的には下記の流れで 実行すれば 問題ない
+
+```
+git stash list
+
+git stash save 'comment'
+
+git pull origin main
+
+git stash pop
+```
+
+
+
 ## 保存された file 一覧 を表示する
 
 ```
@@ -19,13 +33,6 @@ git stash list
 
 ```
 git stash save 'comment'
-```
-
-
-## git pull
-
-```
-git pull origin main
 ```
 
 
