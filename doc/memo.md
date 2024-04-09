@@ -2,20 +2,32 @@
 # doc-tech
 
 
+## doc-tech.co
+
+- merge
+
+
+
 ## os win
 
 setup 
 - memo write
 
-/Users/kamui/doc/tech/doc-tech/os/win/env-setup/win11/win11-env-setup.md
+os/win/env-setup/win11/win11-env-setup.md
+
+
+## pwsh
+
+function
+- override
+
+
+ln
+- cre
 
 
 
-
-
-## git
-
-## git xxx
+## git config
 
 
 
@@ -23,7 +35,7 @@ setup
 
 
 
-## all < english zenpan ??
+## zenpan < english ??
 
 file inside, txt > md
 
