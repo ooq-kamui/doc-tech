@@ -14,7 +14,7 @@ New-Item -ItemType SymbolicLink -Path $path -Value $target
 
 ## color setting
 
-### 現在の setting の確認
+### 設定できる箇所, 現在の setting の確認
 
 ```
 $PSStyle.FileInfo | Get-Member
@@ -44,6 +44,20 @@ $PSStyle.FileInfo.Directory = $PSStyle.Foreground.Cyan
 
 ```
 $PSStyle.FileInfo.Directory = $PSStyle.Foreground.White + $PSStyle.Background.Blue
+```
+
+
+cmdline 入力候補 の設定
+
+```
+Set-PSReadLineOption -Colors @{ InlinePrediction = $PSStyle.Foreground.BrightCyan }
+```
+
+
+bell sound off
+
+```
+Set-PSReadlineOption -BellStyle None
 ```
 
 
