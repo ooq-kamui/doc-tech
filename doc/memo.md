@@ -2,30 +2,16 @@
 # doc-tech
 
 
-## pwsh
-
-cp
-- -r
-- -f
-
-
-history
-- del
-
-
-
-## win scoop
-
-- install
-
-- etc
-
-
-
 ## git
 
-変更の破棄 系 をまとめる
+### 変更の破棄 系 をまとめる
+
 read book
+
+
+ref-rvrs
+- write
+
 
 - git checkout
 
@@ -34,7 +20,6 @@ read book
 
 - git revert
 - git rebase
-
 
 
 

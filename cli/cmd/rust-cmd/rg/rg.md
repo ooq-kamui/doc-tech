@@ -1,9 +1,16 @@
 
-# rg  -  ripgrep
+# rg  ( ripgrep )
 
+
+## vim から call するための option
 
 ```
+--vimgrep
+```
+
 vim で :grep で ripgrep 実行
+
+```
 if executable('rg')
     let &grepprg = 'rg --vimgrep'
     set grepformat=%f:%l:%c:%m
@@ -11,27 +18,26 @@ endif
 ```
 
 
-vim からコールするためのオプション
-```
---vimgrep
-```
-
+## ignore 関連
 
 .gitignore は default で無視
 
 .gitignore を 無視しない
+
 ```
 --hidden
 ```
 
 
-dir 指定
+## dir 指定
+
 ```
 rg key dir
 ```
 
 
-大文字小文字の区別
+## 大文字小文字の区別
+
 ```
 -S  smart
 -s  区別する
@@ -39,64 +45,67 @@ rg key dir
 ```
 
 
-単語検索
+## 単語検索
+
 ```
 rg -w ptrn
 ```
 
 
-file name のみを検索対象 ( find の代替 )
-```
-rg --files -g "*filename*"
-```
+## file type を指定
 
-
-file type を限定 ( wildcard )
 ```
-rg "pattern" -g "*.lua" -g "*.script"
+rg ptn -g "*.lua" -g "*.script"
 ```
 
 
-file name のみ表示
+## file name のみ表示
+
 ```
 rg -l
 ```
 
 
-行数表示しない
-```
+## 行数表示しない
 
 ```
+rg -N
+```
 
 
-file name 一括置換
+## file name 一括置換
+
 ```
 rg 'Apple' -l | xargs sd 'Apple' 'Google'
 ```
 
 
-grep 形式で出力
+## 1 file 複数行 match のとき, file path 部分を全行表示 ( tag jmp 形式 )
+
 ```
 --no-heading
 ```
 
 
-# env
+## env
 
-conf file
+cnf file
+
 ```
 .ripgreprc
 ```
 
 
-path set
+## path set
+
 ```
 export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
 ^ fish だと違うかも
 ```
 
 
-and 検索
+## and 検索
+
 ```
 key1.+key2 のように 正規表現で指定する
 

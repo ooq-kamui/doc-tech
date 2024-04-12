@@ -1,11 +1,16 @@
 
 #  fd
 
+
+https://zenn.dev/megeton/articles/c408511c66f45d
+
+
 ## arg
 
 ```
 fd ptn dir
 ```
+
 
 ## option
 
@@ -29,15 +34,11 @@ sort option : 不明 ( ない? )
 ## ptn
 正規表現が使える
 
-複数指定
+複数指定 ( or )
+
 ```
 fd 'aaa|bbb'
 ```
-
-
-
-## ref
-- https://zenn.dev/megeton/articles/c408511c66f45d
 
 
 
