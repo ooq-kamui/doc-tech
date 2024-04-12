@@ -7,9 +7,9 @@ https://www.atlassian.com/ja/git/tutorials/undoing-changes
 
 ## 補足説明
 
-- git checkout
-- git reset
-- git restore
+- git checkout : ??
+- git reset    : ??
+- git restore  : add 済 を add 前 に戻す
 
 の違い
 
