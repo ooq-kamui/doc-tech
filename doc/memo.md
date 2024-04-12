@@ -2,26 +2,38 @@
 # doc-tech
 
 
-## os win
+## git
 
-setup 
-- memo write
-  - rough
+変更の破棄 系 をまとめる
+read book
 
+- git checkout
 
+- git reset
+- git restore
 
-## whole
+- git revert
+- git rebase
 
-file inside
-- txt > md
 
 
 
 ## pwsh
 
+cp
+- -r
+- -f
 
 
-## git
+history
+- del
+
+
+
+## doc-tech whole
+
+file inside
+- txt > md
 
 
 

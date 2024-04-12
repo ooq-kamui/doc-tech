@@ -2,80 +2,88 @@
 # git diff
 
 
-## git diff
+## 概要のみ表示
 
-引数は `old` `new` の順
-```
-git diff old new
-```
-
-### worktree と index のdiff を表示
-```
-git diff
-```
-
-### 差分の情報のみを表示
+### 差分情報のみを表示
 ```
 git diff --stat
 ```
 
-### branch1 と branch2 のdiff を表示
-```
-git diff branch1 branch2
-```
 
-### index と commit latest のdiff を表示
-```
-git diff --cached
-```
-
-### commit latest と commit 2nd のdiff を表示
-```
-git diff HEAD^..HEAD
-```
-
-### commit と commit のdiff を表示
-```
-git diff SHA1..SHA2
-```
-
-### ファイル名のみを表示
+### ファイル名のみ表示
 ```
 git diff --name-only
 ```
 
 
 
----
+## 説明
+
+### 同種のものを引数で指定する場合
+
+`old` `new` の順
+
+```
+git diff old new
+```
 
 
-## local
 
-### work dir `<>` stage
+## 各種 diff 表示
+
+### work tree と stage の diff
 
 ```
 git diff
 ```
 
-### stage    `<>` HEAD
 
-```
-git diff --staged
-```
-
-### work dir `<>` HEAD
+### work tree と HEAD ( repo ltst ) の diff
 
 ```
 git diff HEAD
 ```
 
 
-## remote
-
-### master   `<>` origin/master
+### stage と HEAD ( repo ltst ) の diff
 
 ```
-git diff master origin/master
+git diff --staged
+```
+
+
+### branch1 と branch2 の diff
+
+```
+git diff branch1 branch2
+```
+
+
+### index と commit latest の diff
+
+```
+git diff --cached
+```
+
+
+### commit prv と commit latest の diff
+
+```
+git diff HEAD^..HEAD
+```
+
+
+### commit1 と commit2 の diff
+
+```
+git diff SHA1..SHA2
+```
+
+
+### local branch と remote branch の diff
+
+```
+git diff main origin/main
 ```
 ^ fetch しないとうまくいかない?
 
