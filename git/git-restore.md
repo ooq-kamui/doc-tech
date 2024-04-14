@@ -1,12 +1,16 @@
 
-# git
+# git restore
 
 
-## git restore
+## git restore とは
 
-### git restore
+wip ..
+
+
+## 基本
+
 ```
-git restore
+git restore ..
 ```
 
 

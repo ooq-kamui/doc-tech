@@ -22,6 +22,11 @@ ref-rvrs
 - git rebase
 
 
+commit の統合
+- q
+  - commit ltst の push を ( 間を飛ばして ) 1回実行することで, できないのか?
+
+
 
 ## doc-tech whole
 

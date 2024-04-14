@@ -9,25 +9,42 @@ https://www.atlassian.com/ja/git/tutorials/undoing-changes
 
 - git checkout : ??
 - git reset    : ??
-- git restore  : add 済 を add 前 に戻す
+- git restore  : add 済 を add 前 に戻す ??
+
+- git revert   : 
+- git rebase   : 
 
 の違い
 
-書きかけ(調べ中)です..
+wip ..
 
+
+ここでは, push 前 の各段階
+
+- work-tree の変更
+- index の変更 ( add 後 )
+- local repo の変更 ( commit 後 )
+
+のものを, remote commit ltst ( head ) に戻す 方法を記します
 
 
 ## add 前
+
+work-tree の変更を remote commit ltst ( head ) に戻す
 
 ### git checkout
 
 #### head ( repo commit ltst ) に戻す
 
 ```
+wip .. ?
+
 git checkout -- .
 ```
 
 ```
+wip .. ?
+
 git checkout .
 ```
 
@@ -35,31 +52,39 @@ git checkout .
 #### file 名を指定して戻す
 
 ```
+wip .. ?
+
 git checkout file_path1
 ```
 
 
 
-## add 後, commit 前
+
+## add 後 ( commit 前 )
+
+index の変更を remote commit ltst ( head ) に戻す
 
 ### git reset
 
 #### head ( repo commit ltst ) に戻す
 
 ```
+wip .. ?
+
 git reset ??
 ```
-書きかけ(調べ中)です..
+wip ..
 
 
 
 #### file 名を指定して戻す
 
 ```
+wip .. ?
+
 git reset ?? file_path1
 ```
-書きかけ(調べ中)です..
-
+wip ..
 
 
 ### git restore
@@ -67,26 +92,29 @@ git reset ?? file_path1
 #### 1つ前の commit に戻す ( delete file も戻す )
 
 ```
+wip .. ?
+
 git restore . ??
 ```
-書きかけ(調べ中)です..
+wip ..
 
 
 #### file 名を指定して戻す
 
 ```
+wip .. ?
+
 git restore ?? file_path1 ( delete file も戻す )
 ```
-書きかけ(調べ中)です..
+wip ..
 
 
 
-## add 後, commit 後
+
+## commit 後 ( push 前 )
 
 commit までしてしまった場合, さらなる修正で直すほうが無難です
 ( どうしてもの場合を除けば )
-
-push までした場合は, なおさらです
 
 
 ### git revert
@@ -94,6 +122,14 @@ push までした場合は, なおさらです
 ### git rebase
 
 
+
+
+## push 後
+
+push までしてしまった場合, さらなる修正で直すほうが無難です
+( どうしてもの場合を除けば )
+
+wip ..
 
 
 
