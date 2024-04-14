@@ -2,9 +2,9 @@
 # karabiner
 
 ```
-jis us   key
+jis us   key               desc
 ^   =    equal_sign
-¥   なし international3
+¥   なし international3    \ | の key
 @   [    open_bracket
 [   ]    close_bracket
 :   ‘    quote

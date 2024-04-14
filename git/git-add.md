@@ -4,7 +4,7 @@
 
 ## git add
 
-working-tree から index ( staging ) にファイルを追加する
+worktree から index に file を追加する
 
 
 ### 配下のすべてのファイルを add

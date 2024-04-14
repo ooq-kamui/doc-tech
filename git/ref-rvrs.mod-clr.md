@@ -5,32 +5,42 @@
 https://www.atlassian.com/ja/git/tutorials/undoing-changes
 
 
-## 補足説明
+## 概要
 
-- git checkout : ??
-- git reset    : ??
+- git checkout : commit から worktree, index に file を戻す
+  - wip ..
+
+- git commit   : --amend で 直前の commit を破棄する
+
+
+- git reset    : 指定した commit の状態へ戻す
+
+
 - git restore  : add 済 を add 前 に戻す ??
+  - wip ..
 
-- git revert   : 
-- git rebase   : 
 
-の違い
+使用度 低
 
-wip ..
+- git rebase   : commit 履歴を変更する
+
+- git revert   : commit を削除する新しい commit を作成する
+
 
 
 ここでは, push 前 の各段階
 
-- work-tree の変更
+- worktree の変更
 - index の変更 ( add 後 )
 - local repo の変更 ( commit 後 )
 
 のものを, remote commit ltst ( head ) に戻す 方法を記します
 
 
+
 ## add 前
 
-work-tree の変更を remote commit ltst ( head ) に戻す
+worktree の変更を commit ltst ( head ) に戻す
 
 ### git checkout
 
@@ -113,13 +123,12 @@ wip ..
 
 ## commit 後 ( push 前 )
 
-commit までしてしまった場合, さらなる修正で直すほうが無難です
-( どうしてもの場合を除けば )
+### git commit --amend
 
 
-### git revert
 
-### git rebase
+### git reset --??
+
 
 
 
@@ -129,7 +138,6 @@ commit までしてしまった場合, さらなる修正で直すほうが無�
 push までしてしまった場合, さらなる修正で直すほうが無難です
 ( どうしてもの場合を除けば )
 
-wip ..
 
 
 

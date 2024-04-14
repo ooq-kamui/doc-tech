@@ -19,9 +19,9 @@
 
 local だけで
 
-- working tree    : 作業ファイル ( 開発するときに修正するファイル )
-- index / staging : add    で追加される
-- repository      : commit で追加される
+- worktree   : 作業ファイル ( 開発するときに修正するファイル )
+- index      : add    で追加される
+- repository : commit で追加される
 
 の 3つがある
 

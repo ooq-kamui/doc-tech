@@ -13,11 +13,11 @@ https://git-scm.com/docs/git-status
 
 - staging されていない file  
   `>` add 未 file ( mod / del )  
-  work-tree と index に違いがある file
+  worktree と index に違いがある file
 
 - 未追跡の file  
   `>` add 未 file ( new )  
-  git によって追跡されない ( かつ .gitignore で無視されない ) work-tree の file
+  git によって追跡されない ( かつ .gitignore で無視されない ) worktree の file
 
 が表示される
 

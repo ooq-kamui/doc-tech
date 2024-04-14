@@ -52,7 +52,7 @@ git stash drop
 
 ## err sample
 
-手元 ( working directory ) の変更を commit せずに
+手元 ( worktree ) の変更を commit せずに
 pull しようとすると
 下記のエラーとなる
 
