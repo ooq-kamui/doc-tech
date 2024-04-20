@@ -2,23 +2,11 @@
 # doc-tech
 
 
-## doc-tech whole
-
-file inside
-- txt > md
-
-  - xx
-  - xx
-  - xx
-
-
-
 ## git
 
-### 変更の破棄 系 をまとめる
+## python
 
-ref-rvrs
-- write
+write
 
 
 
