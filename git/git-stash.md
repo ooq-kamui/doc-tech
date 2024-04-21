@@ -4,20 +4,28 @@
 
 ## 基本
 
-変更を 退避し, git pull 後, 退避した file を元に戻す
+変更 ( worktree ) を 退避し, git pull 後, 退避した file を元に戻す
 ことができる
 
 
 基本的には下記の流れで 実行すれば 問題ない
 
 ```
-git stash list
+git stash list            # 確認
 
 git stash save 'comment'
 
-git pull origin main
+git stash list            # 確認
+
+git status                # 確認
+
+git pull origin main  --rebase
 
 git stash pop
+
+git stash list            # 確認
+
+git status                # 確認
 ```
 
 
