@@ -55,7 +55,7 @@ rg -w ptrn
 ## file type を指定
 
 ```
-rg ptn -g "*.lua" -g "*.script"
+rg ptn -g "*.lua" -g "*.md"
 ```
 
 
@@ -80,36 +80,52 @@ rg 'Apple' -l | xargs sd 'Apple' 'Google'
 ```
 
 
-## 1 file 複数行 match のとき, file path 部分を全行表示 ( tag jmp 形式 )
+## tag jmp 形式 で出力
+
+file path 表示を 先頭の 1行にまとめない
 
 ```
 --no-heading
 ```
 
 
-## env
+## and 検索
 
-cnf file
+option による複数単語指定はできない
 
 ```
-.ripgreprc
+rg key1.+key2
 ```
 
+のように 正規表現で指定する
 
-## path set
+
+## cnf file name
+
+`.ripgreprc`
+
+
+## cnf file path
+
+bash
 
 ```
 export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
-^ fish だと違うかも
+```
+
+fish
+
+```
+set RIPGREP_CONFIG_PATH "$HOME/.ripgreprc"
 ```
 
 
-## and 検索
+## color setting
+
+.ripgreprc
 
 ```
-key1.+key2 のように 正規表現で指定する
-
-^ option による複数単語指定はできない
+--colors=path:fg:cyan
 ```
 
 
