@@ -1,14 +1,18 @@
 
 # next.js
 
+react framework
 
-## cre app
+
+## create app
+
 ```
 npx create-next-app@latest
 ```
 
 
 ## run
+
 ```
 cd my-app
 

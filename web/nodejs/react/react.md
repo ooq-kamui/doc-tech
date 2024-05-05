@@ -2,13 +2,15 @@
 # react
 
 
-## cre prj ( node ver v18.14.2 )
+## create prj ( app )
+
 ```
 npx create-react-app my-app
 ```
 
 
 ## run
+
 ```
 cd my-app
 
