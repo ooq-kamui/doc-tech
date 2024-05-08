@@ -73,4 +73,23 @@ git config --global init.defaultBranch main
 ```
 
 
+## color setting
+
+color list
+
+```
+??
+```
+
+
+git status
+
+```
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+```
+
+
 

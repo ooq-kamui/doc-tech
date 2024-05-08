@@ -17,6 +17,10 @@ etc
 https://github.com/soimort/translate-shell
 
 
+win はない
+
+
+
 ## command
 
 ```
