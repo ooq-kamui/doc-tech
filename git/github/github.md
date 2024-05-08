@@ -28,7 +28,7 @@ slove 2
 - git remote で access token 
 
 ```
-git remote set-url origin https://access-token@github.com/ooq-kamui/cnf.git
+git remote set-url origin https://access-token@github.com/ooq-kamui/doc-tech
 ```
 
 
