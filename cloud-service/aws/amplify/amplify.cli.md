@@ -5,8 +5,6 @@
 ## 基本的な subcmd
 
 ```
-                         v sheet 1 2 で実行した cmd
-
 amplify configure        o    # user ( iam ) を追加するなど
                           
 amplify init                  # init backend

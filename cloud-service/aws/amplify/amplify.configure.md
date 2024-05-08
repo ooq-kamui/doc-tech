@@ -8,7 +8,7 @@
 _ amplify configure project
 
 Project information
-| Name: supplierconfirmdemo
+| Name: 
 | Environment: dev
 | Default editor: vscode
 | App type: javascript
@@ -25,7 +25,7 @@ Advanced: Container-based deployments
 | Leverage container-based deployments: No
 
 ? Which setting do you want to configure? Project information
-? Enter a name for the project supplierconfirmdemo
+? Enter a name for the project 
 ? Choose your default editor: Visual Studio Code
 ✔ Choose the type of app that you're building · javascript
 Please tell us about your project
