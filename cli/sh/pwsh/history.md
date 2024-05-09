@@ -1,8 +1,9 @@
 
-# history
+# history  -  pwsh
 
 
 https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/clear-history?view=powershell-7.4
+
 
 ## history list
 

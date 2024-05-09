@@ -2,84 +2,82 @@
 # vim
 
 
-## .vimrc
+## .vimrc reload
 
-
-## 再読み込み
 ```
 :source ~/.vimrc
 ```
 
-## file
 
-cmd line から複数ファイルタブで起動
+## cmd line から複数ファイル を tab で起動
+
 ```
-vim -p **/sp_*.lua
+vim -p **/memo.*.md
 ```
 
 
----
-
-## neovim の verup
+## neovim の ver up
 
 ver 確認
+
 ```
 nvim -v
 ```
 
+### brew の場合
+
 brew の update
+
 ```
 brew update
 ```
 
-neovim の verup
+brew で neovim の verup
+
 ```
 brew upgrade neovim
 ```
 
-netrw ( filer )
-```
-:Ex
-```
+
+## open file
 
 ```
-:e .
+:e [file_name]
 ```
 
-open
-```
-:e [filename]
-```
 
-標準入力 を vim で開く
+## 標準入力 を vim で開く
+
 ```
 cat filename | vim -
 ```
 
-quit all
+## quit all
+
 ```
 :qa
 ```
 
----
 
-## wrap 行の折り返し
+## wrap ( 行の折り返し )
 
 行を折り返す
+
 ```
 :set wrap
 ```
 
 行を折り返さない
+
 ```
 :set nowrap
 ```
 
----
 
 ## mac の vim で tab を入力する
 
-insert mode にする
+insert mode で
+
 ```
 ctl-v
 <tab>
@@ -89,63 +87,76 @@ ctl-v
 ## visual line にのみコマンドを実行
 
 V などで選択後
+
 : を入力すると
+
 ```
 :'<,'>
 ```
+
 と表示されるので, 続けて コマンドを入力すればよい
+
+ex
 
 ```
 :'<,'>!pwd
 ```
 
-結果が 選択していた範囲に insert される  
-( もとの行は delete される )
+結果が 選択していた範囲に insert される
+
+もとの行は delete されます
 
 
-sort
+## sort
+
 ```
 :sort
 ```
 
 sort desc
+
 ```
 :sort!
 ```
 
----
 
 ## mark
 
 mark lst を表示
+
 ```
 :marks
 ```
 
 mark を つける
+
 ```
 :mark a
 :ma a
 :k a   < ?
 ```
 
-mark を はずす
+mark を 削除
+
 ```
 :delmark a
 ```
 
-mark を はずす all
+mark を 削除 all
+
 ```
 :delmark!
 ```
 
 mark へ jmp
+
 ```
 `a 
 'a 
 ```
 
 mark へ jmp 検索
+
 ```
 [`
 ]`
@@ -153,85 +164,110 @@ mark へ jmp 検索
 ]'
 ```
 
----
 
 ## register
 
 レジスタを確認する
+
 ```
 :registers
 ```
+
+or
 
 ```
 :reg
 ```
 
 register a に登録する
+
 ```
 "ayy
 ```
 
 cmd mode で paste
+
 ```
-c-r レジスタ番号0〜9 ( 直近は 0 )
+c-r レジスタ番号0〜9
 ```
+
+直近のレジスタ番号 は 0
+
 
 ```
 yank した文字列を置換
 yank した文字列で置換
-yank した文字列で検索 ( カーソル位置の単語で検索は * )
+yank した文字列で検索
+```
+
+## カーソル位置の単語で検索
+
+```
+*
 ```
 
 
 ## grep
 
 sub dir も対象
+
 ```
 :grep ptrn **.lua
 ```
 
 2種類の file type を対象
+
 ```
 :grep ptrn **.lua **.script
 ```
 
 すべての sub dir file を対象
+
 ```
 :grep ptrn **
 ```
 
 1つ目の file を自動的に開かない
+
 ```
 :grep! ptrn **.lua
 ```
 
 編集中の file を対象
+
 ```
 :grep ptrn %
 ```
 
 grep 結果を tab で開く
+
 ```
 autocmd QuickFixCmdPost vimgrep,grep tab cwindow
 ```
 
+
+## quickfix
+
 quickfix を filter する
+
 ```
 :packadd Cfilter
 :Cfilter ptrn
 ```
 
----
 
 ## vimgrep
 
 大文字小文字の区別
+
 ```
-/\c 大文字小文字を区別しない
-/\C 大文字小文字を区別する
+/\c    " 大文字小文字を区別しない
 ```
 
----
+```
+/\C    " 大文字小文字を区別する
+```
+
 
 ## colorscheme
 
@@ -239,53 +275,64 @@ quickfix を filter する
 :colorscheme [colorscheme]
 ```
 
----
 
 ## highlight
 
 highlight color confirm
+
 ```
 :highlight
 ```
 
----
 
 ## syntax highlight
 
 group name の確認
 
 調べたい場所に cursor 移動してから
+
 ```
 :echo synIDattr(synID(line("."), col("."), 1), "name")
 ```
 
 group name の color の確認
+
 ```
 :highlight [group name]
 ```
 
----
 
-## syntax highlight filetype
+## syntax highlight setting
 
-syntax file を適用
+syntax file を所定の dir に置く
 
-syntax file を下記に置く
+ex
+
 ```
 ~/.vim/syntax/lua.vim
 ```
 
 
----
+## syntax dir
 
-## file 設置場所
+vim
 
-vim の場合
 ```
 ~/.vim/syntax/lua.vim
 ```
 
----
+neovim
+
+```
+~/.config/nvim/syntax/lua.vim
+```
+
+neovim win
+
+```
+~/AppData/Local/nvim/syntax/lua.vim
+```
+
 
 ## color set confirm
 
@@ -293,47 +340,61 @@ vim の場合
 :so $VIMRUNTIME/syntax/colortest.vim
 ```
 
----
 
 ## c tags
 
 tags file の確認
+
 ```
 :echo tagfiles()
 ```
 
 tags file cre
+
 ```
 ctags -R --languages=lua -f .tags
 ```
 
----
 
 ## vim script
 
 script 内で normal コマンドを実行
+
 ```
 :normal cmd
 ```
 
----
 
 ## key bind の確認
 
-自分で割り当てたキーマップの確認
+自分で割り当てた key bind の確認
+
 ```
-:map  " mode all
-:imap " mode insert
-:nmap " mode nomal
-:vmap " mode visual
-:verbose nmap " 定義元ファイル情報も表示
+:map           " mode all
+:imap          " mode insert
+:nmap          " mode nomal
+:vmap          " mode visual
+:verbose nmap  " 定義元ファイル情報も表示
 ```
 
-mode ins から esc のタイムラグを消去
+
+## mode ins から esc のタイムラグを消去
 
 tmux で
+
 ```
 set -s escape-time 0
+```
+
+
+## netrw ( filer )
+
+```
+:Ex
+```
+
+```
+:e .
 ```
 
 
