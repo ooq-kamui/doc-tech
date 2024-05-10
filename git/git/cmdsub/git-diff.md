@@ -5,19 +5,21 @@
 ## 概要のみ表示
 
 ### 差分情報のみを表示
+
 ```
 git diff --stat
 ```
 
 
-### ファイル名のみ表示
+### file_name のみ表示
+
 ```
 git diff --name-only
 ```
 
 
 
-## 説明
+## 基本の説明
 
 ### 同種のものを引数で指定する場合
 
@@ -52,17 +54,19 @@ git diff --staged
 ```
 
 
-### branch1 と branch2 の diff
-
-```
-git diff branch1 branch2
-```
-
-
 ### index と commit latest の diff
 
 ```
 git diff --cached
+```
+
+wip : 1つ上のと違いは.. ??
+
+
+### branch1 と branch2 の diff
+
+```
+git diff branch1 branch2
 ```
 
 
@@ -85,7 +89,10 @@ git diff SHA1..SHA2
 ```
 git diff main origin/main
 ```
-^ fetch しないとうまくいかない?
+
+^ fetch しないとうまくいかない ?
+
+file を指定する場合は ?
 
 
 

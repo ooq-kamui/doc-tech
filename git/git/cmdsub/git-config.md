@@ -73,22 +73,14 @@ git config --global init.defaultBranch main
 ```
 
 
-## color setting
+## 直接編集
 
-color list
+comment
 
-```
-??
-```
-
-
-git status
+wip :
 
 ```
-[color "status"]
-  added = yellow
-  changed = green
-  untracked = cyan
+#?? comment
 ```
 
 

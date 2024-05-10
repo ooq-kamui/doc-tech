@@ -5,6 +5,7 @@
 ## 
 
 ```
+amplify pull
 ```
 
 
