@@ -23,9 +23,9 @@ red
 
 ```
 [color "status"]
-  added = yellow
-  changed = green
-  untracked = cyan
+  added = green
+  changed = yellow
+  untracked = yellow
 ```
 
 

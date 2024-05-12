@@ -2,6 +2,27 @@
 # pwsh
 
 
+## profile
+
+### path
+
+one drive
+
+```
+
+```
+
+normal
+
+```
+
+```
+
+### one drive をやめる
+
+
+
+
 ## cp
 
 https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/copy-item?view=powershell-7.4
@@ -24,19 +45,6 @@ cp -f
 ```
 Copy-Item -Force -Path $dir1 -Destination $dir2/
 ```
-
-
-## ln -s
-
-https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/new-item?view=powershell-7.4
-
-
-$target のシンボリックリンクを $path に作る
-
-```
-New-Item -ItemType SymbolicLink -Path $path -Value $target
-```
-
 
 
 ## fzf
