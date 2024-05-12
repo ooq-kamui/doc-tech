@@ -37,7 +37,7 @@ git stash list
 ```
 
 
-## 変更 を 保存
+## 変更 を stash
 
 ```
 git stash save 'comment'
@@ -51,10 +51,17 @@ git stash pop
 ```
 
 
-## 直近に 保存された file を破棄
+## 直近に 保存された stash を破棄
 
 ```
 git stash drop
+```
+
+
+## stash no を指定して 破棄
+
+```
+git stash drop stash@{n}
 ```
 
 

@@ -16,5 +16,11 @@ global var
 $global:val = 1
 ```
 
+env var
+
+```
+$env:val = 1
+```
+
 
 

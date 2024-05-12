@@ -21,7 +21,7 @@ list ( ary ) は ref
 
 
 
-## scope
+## var scope
 
 何も指定しないと local になる
 
