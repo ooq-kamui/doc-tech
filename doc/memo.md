@@ -6,9 +6,8 @@
 
 c9 ( bash ) setup
 
-- z install
-- fzf install
-- vim-plug install
+- fd
+- rg
 
 
 ## git merge
