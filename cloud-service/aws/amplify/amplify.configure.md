@@ -2,41 +2,47 @@
 # amplify configure
 
 
-## 実行例
+主に user ( iam ) を設定する
+
+
+## 基本
 
 ```
-_ amplify configure project
+amplify configure
+```
 
-Project information
-| Name: 
-| Environment: dev
-| Default editor: vscode
-| App type: javascript
-| Javascript framework: react-native
-| Source Directory Path: src
-| Distribution Directory Path: /
-| Build Command: npm run-script build
-| Start Command: npm run-script start
+ex
 
-AWS Profile setting
-| Selected profile: default
+```
+_ amplify configure
+Follow these steps to set up access to your AWS account:
 
-Advanced: Container-based deployments
-| Leverage container-based deployments: No
+Sign in to your AWS administrator account:
+https://console.aws.amazon.com/
+Press Enter to continue
+Unable to open https://console.aws.amazon.com/: spawn xdg-open ENOENT
+Have you installed `xdg-utils` on your machine?
 
-? Which setting do you want to configure? Project information
-? Enter a name for the project 
-? Choose your default editor: Visual Studio Code
-✔ Choose the type of app that you're building · javascript
-Please tell us about your project
-? What javascript framework are you using react
-? Source Directory Path:  src
-? Distribution Directory Path: build
-? Build Command:  npm run-script build
-? Start Command: npm run-script start
-Using default provider  awscloudformation
+Specify the AWS Region
+? region:  ap-northeast-1
+Follow the instructions at
+https://docs.amplify.aws/cli/start/install/#configure-the-amplify-cli
 
-Successfully made configuration changes to your project.
+to complete the user creation in the AWS console
+https://console.aws.amazon.com/iamv2/home#/users/create
+Press Enter to continue
+Unable to open https://docs.amplify.aws/cli/start/install/#configure-the-amplify-cli: spawn xdg-open ENOENT
+Have you installed `xdg-utils` on your machine?
+Unable to open https://console.aws.amazon.com/iamv2/home#/users/create: spawn xdg-open ENOENT
+Have you installed `xdg-utils` on your machine?
+
+Enter the access key of the newly created user:
+? accessKeyId:  ********************
+? secretAccessKey:  ****************************************
+This would update/create the AWS Profile in your local machine
+? Profile Name:  default
+
+Successfully set up the new user.
 ```
 
 

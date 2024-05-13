@@ -5,49 +5,48 @@
 ## 基本的な subcmd
 
 ```
-amplify configure            # user ( iam ) を追加するなど
+amplify configure        # user ( iam ) を追加するなど
                          
-amplify init                 # init backend
-                             #   amplify/ src/ が作成される
+amplify init             # init backend
+                         #   amplify/ src/ が作成される
 
 
-amplify add                  # app で使用する機能を追加
+amplify add              # app で使用する機能を追加
                          
-amplify update               # app で使用する機能を 更新
+amplify update           # app で使用する機能を 更新
 
 
-amplify env list             # 環境の 確認
+amplify env list         # 環境の 確認
 
-amplify env add dev          # 環境の 追加
+amplify env add dev      # 環境の 追加
 
-amplify env checkout dev     # 環境の 切り替え
+amplify env checkout dev # 環境の 切り替え
 
-amplify env get              # 環境の 詳細情報 表示
-
-
-amplify pull                 # ?? を pull する
-                             #   sheet 1 の流れの中で
-                             #   pull の紐づき対象はどう 設定されているのか
-
-amplify status               # 状態を確認
-                             # aws cloud に push されていない local resource の状態を 表示する
-                             # ( git status に似ている ? )
-
-amplify push                 # local の backend         resource を cloud に provisioning
-                             #   deploy しているか不明
-
-amplify publish              # local の backend & front resource を cloud に provisioning & deploy
-                             #   厳密にはちょっと違うかも ?
+amplify env get          # 環境の 詳細情報 表示
 
 
-amplify api                  # api resource の操作 
+amplify pull             # cloud の src を pull する
+                         # 初回実行で 紐づき先の prj env を設定できる
 
-amplify function             # function resouce の操作
+amplify status           # 状態を確認
+                         # aws cloud に push されていない local resource の状態を 表示する
+                         # ( git status に似ている ? )
+
+amplify push             # local の backend         resource を cloud に provisioning
+                         #   deploy しているか不明
+
+amplify publish          # local の backend & front resource を cloud に provisioning & deploy
+                         #   厳密にはちょっと違うかも ?
 
 
-amplify mock                 # local で test
+amplify api              # api resource の操作 
 
-amplify mock api             # local で test, api
+amplify function         # function resouce の操作
+
+
+amplify mock             # local で test
+
+amplify mock api         # local で test, api
 
 
 
@@ -55,9 +54,9 @@ amplify console
 
 amplify console api
 
-amplify delete               # cloud resource をすべて削除
+amplify delete           # cloud resource をすべて削除
 
-amplify help                 # help
+amplify help             # help
 ```
 
 

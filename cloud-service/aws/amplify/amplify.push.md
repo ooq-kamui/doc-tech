@@ -12,7 +12,7 @@ amplify push
 ```
 
 wip : todo
-- 前の log 見てみる
+
 
 
 ## ref & question
@@ -25,6 +25,14 @@ amplify push    # local の backend         resource を cloud に provisioning 
 
 amplify publish # local の backend & front resource を cloud に provisioning & deploy
 ```
+
+
+
+## question
+
+q. push 先の紐づきはどこで設定しているか ?
+
+a. amplify pull の 初回実行で 設定
 
 
 
