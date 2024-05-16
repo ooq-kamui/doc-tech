@@ -2,6 +2,15 @@
 # rg  ( ripgrep )
 
 
+## install
+
+c9
+
+```
+wip : linuxbrew
+```
+
+
 ## vim から call するための option
 
 ```

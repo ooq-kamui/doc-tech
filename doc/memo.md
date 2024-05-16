@@ -1,6 +1,17 @@
 
 # doc-tech
 
+memo
+
+
+## bash
+
+key-bind
+- yank
+
+- setting mod can not
+  - c-u
+
 
 ## c9
 
