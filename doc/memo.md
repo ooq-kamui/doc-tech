@@ -1,7 +1,21 @@
 
 # doc-tech
 
-memo
+
+## vim
+
+encode auto
+
+
+# git
+
+push 取り消し
+- reset 
+
+
+# unix-cmd
+
+diff -rq : file name only
 
 
 ## bash
@@ -17,8 +31,8 @@ key-bind
 
 c9 ( bash ) setup
 
-- fd
-- rg
+- fd : npm
+- rg : ?
 
 
 ## git merge

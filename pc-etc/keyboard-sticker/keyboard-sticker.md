@@ -11,7 +11,7 @@ shift-left
 - 16 x 12 mm
 
 key-fn
-- ?? x 11 mm
+- 11 x 07 mm
 
 
 
