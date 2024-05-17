@@ -34,8 +34,15 @@ sed "/key/ r file.txt"
 
 ```
 sed -n "/aa/,/cc/ p"
+```
 
-# option -n と併用
+option -n と併用
+
+
+m 行目を表示
+
+```
+sed -n "m p"
 ```
 
 

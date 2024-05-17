@@ -2,7 +2,7 @@
 # git log
 
 
-## commit history を確認する
+## commit history を表示する
 
 ```
 git log
@@ -13,6 +13,13 @@ git log
 
 ```
 git log branch1
+```
+
+
+## 日付の表示形式を指定
+
+```
+git log --date=format:'%Y-%m-%d %H:%M:%S'
 ```
 
 

@@ -2,33 +2,42 @@
 # diff
 
 
+## file name のみ表示
+
+```
+diff -rq a.md b.md
+```
+
+
 ## vimdiff を使う
 
 ```
-$ vimdiff a.txt b.txt
+vimdiff a.md b.md
 ```
 
 次でも同じ
+
 ```
-$ vim -d a.txt b.txt
+vim -d a.md b.md
 ```
 
 
 操作
+```
 dp   左の差分を右へマージ
 do   右の差分を左へマージ
 ]-c  次の差分へジャンプ
 [-c  前の差分へジャンプ
+```
 
 
 ## git diff
 
 ```
-$ git diff a.txt b.txt
+git diff a.md b.md
 ```
 
-
-## option
+option
 
 ```
 -y  左右に並べて表示

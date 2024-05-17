@@ -2,34 +2,9 @@
 # doc-tech
 
 
-## vim
+## c9 bash
 
-encode auto
-
-
-# git
-
-push 取り消し
-- reset 
-
-
-# unix-cmd
-
-diff -rq : file name only
-
-
-## bash
-
-key-bind
-- yank
-
-- setting mod can not
-  - c-u
-
-
-## c9
-
-c9 ( bash ) setup
+setup , install
 
 - fd : npm
 - rg : ?
@@ -44,6 +19,12 @@ write
 
 vim-01.md
 - organize
+
+
+## bash
+
+setting mod can not
+- c-u
 
 
 
