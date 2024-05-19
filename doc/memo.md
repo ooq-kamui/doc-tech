@@ -2,6 +2,12 @@
 # doc-tech
 
 
+
+## git
+
+git merge での vim で my .vimrc read
+
+
 ## c9 bash
 
 setup , install
