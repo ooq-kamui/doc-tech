@@ -6,22 +6,17 @@
 
 ### path
 
-one drive
-
-```
-
-```
-
 normal
 
 ```
-
+wip :
 ```
 
-### one drive をやめる
+one drive
 
-
-
+```
+wip :
+```
 
 ## cp
 
@@ -103,7 +98,6 @@ bell sound off
 ```
 Set-PSReadlineOption -BellStyle None
 ```
-
 
 cmdline 入力候補 の設定
 

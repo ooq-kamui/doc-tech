@@ -2,6 +2,11 @@
 # doc-tech
 
 
+## git
+
+.orig file about
+
+
 ## vim
 
 vim-01.md
