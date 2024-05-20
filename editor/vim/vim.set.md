@@ -10,4 +10,12 @@ set fileencodings=utf-8,sjis
 ```
 
 
+## マウス の クリックを無効 ( ホイールは有効 )
+
+```
+set mouse=n
+map <LeftMouse> <Nop>
+```
+
+
 
