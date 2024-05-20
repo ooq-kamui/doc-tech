@@ -2,12 +2,6 @@
 # doc-tech
 
 
-## pwsh
-
-インテリセンス
-- line mlt
-
-
 ## vim
 
 vim-01.md

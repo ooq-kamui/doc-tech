@@ -98,17 +98,27 @@ $PSStyle.FileInfo.Directory = $PSStyle.Foreground.White + $PSStyle.Background.Bl
 ```
 
 
+bell sound off
+
+```
+Set-PSReadlineOption -BellStyle None
+```
+
+
 cmdline 入力候補 の設定
 
 ```
 Set-PSReadLineOption -Colors @{ InlinePrediction = $PSStyle.Foreground.BrightCyan }
 ```
 
+複数行で候補を表示する
 
-bell sound off
+https://zenn.dev/atsushifx/articles/pwsh-console-intelisense
 
 ```
-Set-PSReadlineOption -BellStyle None
+Set-PSReadLineOption -PredictionSource HistoryAndPlugin
+Set-PSReadLineOption -PredictionViewStyle ListView
+Set-PSReadLineOption -Colors @{ InLinePrediction = [ConsoleColor]::Cyan }
 ```
 
 
