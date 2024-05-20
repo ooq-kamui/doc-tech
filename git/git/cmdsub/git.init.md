@@ -128,7 +128,7 @@ git commit ???
 追加した index  ( ファイルの変更点 ) を github に作成
 
 ```
-git remote add origin https://github.com/ooq-kamui/vimrc
+git remote add origin https://github.com/ooq-kamui/cnf
 ```
 
 github に repository を作成

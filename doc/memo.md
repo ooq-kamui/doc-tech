@@ -2,10 +2,10 @@
 # doc-tech
 
 
+## vim
 
-## git
-
-git merge での vim で my .vimrc read
+vim-01.md
+- organize
 
 
 ## c9 bash
@@ -16,21 +16,11 @@ setup , install
 - rg : ?
 
 
-## git merge
-
-write
-
-
-## vim
-
-vim-01.md
-- organize
-
-
 ## bash
 
 setting mod can not
 - c-u
+  - resolve ?
 
 
 

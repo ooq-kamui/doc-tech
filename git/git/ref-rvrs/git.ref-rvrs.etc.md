@@ -17,7 +17,13 @@ git config --global core.editor vim
 
 ## git merge で vimdiff を使う
 
-wip :
+```
+git config --global merge.tool vimdiff
+```
+
+```
+git mergetool
+```
 
 
 
