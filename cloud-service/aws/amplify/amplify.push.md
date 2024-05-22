@@ -11,8 +11,12 @@ local の backend resource を cloud に provisioning & deploy する
 amplify push
 ```
 
-wip : todo
 
+## resource を指定して amplify push
+
+```
+amplify push function fnc_name
+```
 
 
 ## ref & question
