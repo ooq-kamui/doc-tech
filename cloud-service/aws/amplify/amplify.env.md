@@ -15,13 +15,7 @@ amplify env list
 amplify env add dev
 ```
 
-下記のようにも書ける ?
-
-```
-amplify add env
-```
-
-wip : あとで調べる
+ここで追加しているのは backend
 
 
 ## env の 切り替え

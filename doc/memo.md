@@ -2,9 +2,9 @@
 # doc-tech
 
 
-## git
+## markdown
 
-.orig file about
+img size ch
 
 
 ## vim

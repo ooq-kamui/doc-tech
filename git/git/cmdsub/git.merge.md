@@ -33,16 +33,18 @@ git mergetool
 ```
 
 
-## vimdiff の使いかた
+## git mergetool ( vimdiff ) の使いかた
 
 上 : local / base / remote
 
 下 : 作業中のファイル
 
 
-`.orig` file って何 ?
+## `.orig` file とは
 
-wip :
+git mergetool で編集後にできる backup file
+
+とくに用途がなければ, rm してよい
 
 
 
