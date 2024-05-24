@@ -38,6 +38,18 @@ amplify env get
 amplify env pull
 ```
 
+local での修正を破棄して, cloud の状態に 戻す
+
+```
+amplify env pull --restore
+```
+
+or
+
+```
+amplify pull
+```
+
 
 ## env の import
 
