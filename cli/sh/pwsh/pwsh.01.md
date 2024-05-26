@@ -9,14 +9,25 @@
 normal
 
 ```
-wip :
+$home\Documents\PowerShell
 ```
 
 one drive
 
 ```
-wip :
+$home\OneDrive\Documents\PowerShell
 ```
+
+## env:path
+
+add
+
+ex
+
+```
+$ENV:Path += ";$home\wrk\app\gcal\bin"
+```
+
 
 ## cp
 

@@ -2,6 +2,12 @@
 # doc-tech
 
 
+## win cmd
+
+gcal
+- install
+
+
 ## markdown
 
 img size ch
