@@ -2,6 +2,11 @@
 # doc-tech
 
 
+## git switch
+
+switch ha checkout と違うのか ?
+
+
 ## vim
 
 vim-01.md
@@ -11,20 +16,13 @@ vim-01.md
 ## markdown
 
 img size ch
+- 50 %
 
 
 ## win cmd
 
 gcal
 - install
-
-
-## c9 bash
-
-setup , install
-
-- fd : npm
-- rg : ?
 
 
 ## bash
