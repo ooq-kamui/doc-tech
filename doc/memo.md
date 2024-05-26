@@ -2,10 +2,10 @@
 # doc-tech
 
 
-## win cmd
+## vim
 
-gcal
-- install
+vim-01.md
+- organize
 
 
 ## markdown
@@ -13,10 +13,10 @@ gcal
 img size ch
 
 
-## vim
+## win cmd
 
-vim-01.md
-- organize
+gcal
+- install
 
 
 ## c9 bash

@@ -4,10 +4,10 @@
 
 ## install
 
-c9
+brew ( mac / c9 / linux )
 
 ```
-wip : linuxbrew
+brew install ripgrep
 ```
 
 
