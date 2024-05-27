@@ -26,4 +26,25 @@ git mergetool
 ```
 
 
+## git commit のあと, global の user, email を設定していなかったとき
+
+```
+git config --global user.name your_name
+```
+
+```
+git config --global user.email you@example.com
+```
+
+```
+git commit --amend --reset-author
+```
+
+confirm
+
+```
+git log
+```
+
+
 

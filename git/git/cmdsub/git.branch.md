@@ -29,12 +29,16 @@ git branch branch_name
 git branch -m name_old name_new
 ```
 
+ex
+
 ```
 git branch -m master main
 ```
 
 
-## branch を切り替える ( checkout ? )
+## branch を切り替える
+
+branch の切り替えは `git branch` ではないので注意
 
 ```
 git checkout branch_name

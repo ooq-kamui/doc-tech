@@ -6,6 +6,8 @@ https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.managem
 
 ## $target へのシンボリックリンクを $path に作る
 
+管理者権限で login
+
 ```
 New-Item -ItemType SymbolicLink -Path $path -Value $target
 ```
