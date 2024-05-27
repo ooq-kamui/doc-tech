@@ -4,11 +4,9 @@
 
 ## 初回起動
 
-gitbash 本体を起動する
+gitbash 本体を起動する( 初回は windows terminal から起動しない )
 
-初回から windows terminal から起動しない
-
-.bashrc などが適切に作成されない
+.bashrc などが適切に作成されないため
 
 
 ## 文字コード の設定
@@ -17,7 +15,7 @@ gitbash 本体を起動する
 chcp.com 65001
 ```
 
-`chcp` ではなく `chcp.com` なので注意
+gitbash の場合は `chcp` ではなく `chcp.com` なので注意
 
 
 .bashrc などに 下記を追加
@@ -60,6 +58,8 @@ eval "$(zoxide init bash)"
 fzf を pwsh から install する
 
 vim plugin を pwsh から install する
+
+plug.vim を ~/.vim/autoload/plug.vim に設置する
 
 gitbash の vim から plugin fzf.vim を install して `~/.vim/plugged/fzf/bin` を設置する
 

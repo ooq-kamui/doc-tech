@@ -4,19 +4,19 @@
 
 ## git switch
 
-switch ha checkout と違うのか ?
-
-
-## vim
-
-vim-01.md
-- organize
+switch to checkout ha どう違うの ?
 
 
 ## markdown
 
 img size ch
 - 50 %
+
+
+## vim
+
+vim-01.md
+- organize
 
 
 ## win cmd
