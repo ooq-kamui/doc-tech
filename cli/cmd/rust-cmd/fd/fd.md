@@ -17,14 +17,18 @@ fd ptn dir
 ## option
 
 ```
--e : 拡張子指定
-     複数の場合は -e も複数指定
+-e            拡張子指定
+              複数の場合は -e も複数指定
 
--t : ファイルタイプ指定
+-t            ファイルタイプ指定
 
--E : 除外パターン
+-E            除外パターン
 
--I : .gitignore, .ignore, .fdignore を含める
+-H  --hidden  隠しファイル ( . から始まるファイル名 ) を対象にする
+
+-I            .gitignore, .ignore, .fdignore を含める
+
+-L  --follow  symbolic link を対象にする
 ```
 
 
