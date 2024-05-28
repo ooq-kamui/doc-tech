@@ -2,16 +2,10 @@
 # doc-tech
 
 
-## win
+## markdown
 
-gcal
-- install
-  - web page
-
-
-## amp code commit
-
-git push at pc
+img size ch
+- 50 %
 
 
 ## pwsh
@@ -24,10 +18,9 @@ history del
 switch to checkout ha どう違う ?
 
 
-## markdown
+## amp code commit
 
-img size ch
-- 50 %
+git push at pc
 
 
 ## vim
