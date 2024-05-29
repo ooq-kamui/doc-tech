@@ -2,6 +2,11 @@
 # doc-tech
 
 
+## unix-cmd
+
+printenv
+
+
 ## markdown
 
 img size ch

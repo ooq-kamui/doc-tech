@@ -1,6 +1,8 @@
 
 # amplify cli
 
+https://qiita.com/bonjiko/items/93e8fad618bd4b588b63
+
 
 ## 基本的な subcmd
 
