@@ -2,11 +2,6 @@
 # doc-tech
 
 
-## unix-cmd
-
-printenv
-
-
 ## markdown
 
 img size ch
@@ -16,16 +11,6 @@ img size ch
 ## pwsh
 
 history del
-
-
-## git switch
-
-switch to checkout ha どう違う ?
-
-
-## amp code commit
-
-git push at pc
 
 
 ## vim
