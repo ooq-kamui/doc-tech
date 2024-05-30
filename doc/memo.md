@@ -11,6 +11,18 @@ img size ch
 ## pwsh
 
 history del
+- cmd, method 
+
+
+## c9
+
+fish
+- install by brew
+
+
+c9 , brew jitai install 
+- doc-tech write
+  - confirm
 
 
 ## vim
