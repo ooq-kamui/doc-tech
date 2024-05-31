@@ -2,12 +2,6 @@
 # doc-tech
 
 
-## markdown
-
-img size ch
-- 50 %
-
-
 ## pwsh
 
 history del
@@ -20,9 +14,8 @@ fish
 - install by brew
 
 
-c9 , brew jitai install 
-- doc-tech write
-  - confirm
+brew
+- install
 
 
 ## vim

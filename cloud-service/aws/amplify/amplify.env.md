@@ -21,7 +21,7 @@ amplify env add dev
 ## env の 切り替え
 
 ```
-amplify env checkout dev
+amplify env checkout env_name
 ```
 
 

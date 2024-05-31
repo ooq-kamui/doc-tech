@@ -44,4 +44,30 @@ ref : https://qiita.com/suin/items/96232f2d60ca5a13ac6d
 ```
 
 
+## img
+
+```
+![desc](file_path)
+```
+
+size mod
+
+```
+<img src="file_path" width="50%" >
+```
+
+
+## 折りたたみ
+
+```
+<details><summary>title</summary>
+
+desc
+desc
+desc
+
+</details>
+```
+
+
 

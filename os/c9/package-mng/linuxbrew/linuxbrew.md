@@ -1,18 +1,23 @@
 
 # linuxbrew
 
+いまや, linux でも,
+使用上は linuxbrew とあまり意識せず brew と思っていてもほとんど支障はない
+ので, brew.md を参照のこと
 
-## brew 自体の install
+ただし, 中身は linuxbrew です
+
+
+## linuxbrew 自体の install
 
 ```
-wip :
 ```
 
 
-## brew 自体の uninstall
+## linuxbrew 自体の uninstall
 
 ```
-wip :
 ```
+
 
 
