@@ -2,6 +2,9 @@
 # doc-tech
 
 
+amplify write much
+
+
 ## pwsh
 
 history del
@@ -12,10 +15,12 @@ history del
 
 fish
 - install by brew
+  - `brew install fish`
 
 
 brew
 - install
+  - cmd ggl
 
 
 ## vim
