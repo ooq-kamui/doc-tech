@@ -2,6 +2,7 @@
 # fish script
 
 ## 真偽値
+
 ```
 真 : 0
 偽 : 1
@@ -10,6 +11,7 @@
 ## 演算子 ( test コマンドの オプション )
 
 ### 文字列
+
 ```
 -z STR  STR が 空文字
 -n STR  STR が 1文字以上の文字列 ( 空文字でない )
@@ -19,6 +21,7 @@ STRING1 != STRING2  STRING1 と STRING2 が異なる
 ```
 
 ### ファイルとディレクトリ関連
+
 ```
 -b FILE  ブロックデバイス
 -c FILE  キャラクタデバイス
@@ -43,6 +46,7 @@ STRING1 != STRING2  STRING1 と STRING2 が異なる
 ```
 
 ### 整数関連
+
 ```
 NUM1 -eq NUM2  NUM1 と NUM2 が同値
 NUM1 -ne NUM2  NUM1 と NUM2 が同値ではない
@@ -55,6 +59,7 @@ NUM1 -le NUM2  NUM1 <= NUM2
 
 
 ### 式を組み合わせる
+
 ```
 COND1 -a COND2  COND1 と COND2 の両方が真
 COND1 -o COND2  COND1 と COND2 のどちらかが真
@@ -63,6 +68,7 @@ COND1 -o COND2  COND1 と COND2 のどちらかが真
 
 
 ### 括弧で囲むことで 条件式をまとめられる
+
 ```
 ( EXPRESSION ) は EXPRESSION の値を返す
 ```

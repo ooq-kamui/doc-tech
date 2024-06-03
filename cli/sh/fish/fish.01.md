@@ -3,6 +3,7 @@
 
 
 ## 文字列置換
+
 ```
 string replace "srch" "rpl" "target"
 ```
@@ -10,6 +11,7 @@ string replace "srch" "rpl" "target"
 ## history
 
 history からの実行
+
 ```
 tile
 と打ってから ctl-p
@@ -18,22 +20,26 @@ ctl-j で実行
 ```
 
 history から "xxx" を含むものを検索
+
 ```
 history search --contains "xxx"
 ```
 
 history から "xxx" を含むものを削除
+
 ```
 history delete --contains "xxx"
 ```
 
 下記でもいけるようではある
+
 ```
 history delete "xxx"
 ```
 
 
 ## key bind
+
 ```
 ~/.config/fish/config.fish
 ```
@@ -45,12 +51,14 @@ http://fish.rubikitch.com/bind/
 
 
 ## config.fish 再読込
+
 ```
 source ~/.config/fish/config.fish
 ```
 
 
 ## key bind 確認
+
 ```
 fish_key_reader
 
@@ -59,6 +67,7 @@ http://fish.rubikitch.com/fish_key_reader/
 
 
 ## wildcard
+
 ```
 ?   / 以外の任意の一文字
 *   / 以外のゼロ個以上の任意の文字
@@ -70,6 +79,7 @@ https://www.gfd-dennou.org/member/hiroki/homepage/main009.html
 ```
 
 ## vi mode
+
 ```
 fish_vi_key_bindings
 
@@ -77,6 +87,7 @@ fish_default_key_bindings
 ```
 
 ## 計算
+
 ```
 math 1 + 1
 ```
