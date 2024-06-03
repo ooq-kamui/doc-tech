@@ -38,10 +38,20 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 z
 
+at bash
+
 https://github.com/rupa/z
 
 ```
 git clone https://github.com/rupa/z ~/wrk/app/z
+```
+
+at fish
+
+https://github.com/jethrokuan/z
+
+```
+fisher install jethrokuan/z
 ```
 
 

@@ -2,25 +2,25 @@
 # doc-tech
 
 
-amplify write much
+## c9
+
+md file organize
+- fish
+  - install by brew
+    - `brew install fish`
+
+- brew install
+
+
+## amplify
+
+write much
 
 
 ## pwsh
 
 history del
 - cmd, method 
-
-
-## c9
-
-fish
-- install by brew
-  - `brew install fish`
-
-
-brew
-- install
-  - cmd ggl
 
 
 ## vim
