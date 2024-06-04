@@ -12,6 +12,11 @@ md file organize
 - brew install
 
 
+## c9 fish
+
+color setting
+
+
 ## amplify
 
 write much
