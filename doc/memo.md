@@ -2,21 +2,22 @@
 # doc-tech
 
 
-## amplify
-
-write much
-
-
 ## pwsh
 
 history del
 - cmd, method 
 
 
+## amplify
+
+write much
+
+
 ## vim
 
 vim-01.md
 - organize
+- file name > vim.01.md
 
 
 ## bash
