@@ -2,21 +2,6 @@
 # doc-tech
 
 
-## c9
-
-md file organize
-- fish
-  - install by brew
-    - `brew install fish`
-
-- brew install
-
-
-## c9 fish
-
-color setting
-
-
 ## amplify
 
 write much

@@ -17,7 +17,7 @@ at 2024-05
 ## brew 自体の uninstall
 
 ```
-wip:
+wip: 
 ```
 
 
