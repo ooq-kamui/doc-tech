@@ -15,9 +15,8 @@ write much
 
 ## vim
 
-vim-01.md
+vim.01.md
 - organize
-- file name > vim.01.md
 
 
 ## bash
