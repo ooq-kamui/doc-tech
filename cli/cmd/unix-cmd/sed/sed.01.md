@@ -83,7 +83,16 @@ sed "/key/ s/find/replace/g"
 ```
 
 
-削除  -  key1 のある行から key2 のある行
+## 削除
+
+key1 のある行から key2 のある行 を削除
+
+```
+sed "/key1/ d"
+```
+
+
+key1 のある行から key2 のある行 を削除
 
 ```
 sed "/key1/,/key2/ d"
