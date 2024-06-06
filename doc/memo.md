@@ -2,6 +2,11 @@
 # doc-tech
 
 
+## vim
+
+while, break
+
+
 ## pwsh
 
 history del
