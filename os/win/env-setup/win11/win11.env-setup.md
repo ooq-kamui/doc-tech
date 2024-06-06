@@ -109,4 +109,13 @@ wsl --install
 ```
 
 
+## jq install
+
+- `https://jqlang.github.io/jq/` にアクセス
+- `download jq` から `windows ( amd 64 )` を download
+  - `jq-windows-amd64.exe` が download される
+- 好きな dir ( ~/wrk/app/bin/pwsh/ など ) に置く
+- 置いた dir に path を通す
+
+
 
