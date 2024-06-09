@@ -2,9 +2,11 @@
 # doc-tech
 
 
-## vim
+## awscli
 
-while, break
+dynamodb
+- install
+  - confirm
 
 
 ## pwsh

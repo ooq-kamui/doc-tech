@@ -2,6 +2,13 @@
 # git  -  ref rvrs
 
 
+## push してない commit があるか
+
+```
+git log origin/main..main
+```
+
+
 ## git merge の vim で, 自分の .vimrc を適用したい
 
 - そもそも, default で立ち上がっているのは vim ではなく, vi
