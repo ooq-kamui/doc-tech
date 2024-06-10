@@ -2,22 +2,17 @@
 # doc-tech
 
 
-## awscli
+## aws-cli
 
-dynamodb
-- install
-  - confirm
+dynamo-db
+- query
+- scan
 
 
 ## pwsh
 
 history del
 - cmd, method 
-
-
-## amplify
-
-write much
 
 
 ## vim
