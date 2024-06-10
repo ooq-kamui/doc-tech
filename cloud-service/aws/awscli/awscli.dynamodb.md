@@ -2,6 +2,8 @@
 # awscli dynamo db
 
 
+## ref
+
 https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/cli-services-dynamodb.html
 
 https://qiita.com/ekzemplaro/items/93c0aef433a2b633ab4a
