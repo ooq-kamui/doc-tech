@@ -2,6 +2,11 @@
 # doc-tech
 
 
+## pwsh
+
+convert-path
+
+
 ## aws-cli
 
 dynamo-db
