@@ -2,6 +2,23 @@
 # doc-tech
 
 
+## git
+
+config color log commit hash
+- green
+
+
+## vim
+
+arg diff
+- doc-tech write
+
+
+arg space can ?
+- " " ?
+- doc-tech write
+
+
 ## pwsh
 
 convert-path
