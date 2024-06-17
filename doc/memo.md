@@ -2,33 +2,41 @@
 # doc-tech
 
 
+## unix-cmd uniq
+
+重複行を表示
+
+
 ## git
 
-config color log commit hash
-- green
+config color
+- ref : https://www.atlassian.com/ja/git/tutorials/setting-up-a-repository/git-config
+
+
+## dynamo db
+
+item del
+
+item upd
 
 
 ## vim
 
-arg diff
-- doc-tech write
+v box mv
+
+
+cmd arg 2 type diff
+- research
 
 
 arg space can ?
 - " " ?
-- doc-tech write
+- research
 
 
 ## pwsh
 
 convert-path
-
-
-## aws-cli
-
-dynamo-db
-- query
-- scan
 
 
 ## pwsh
