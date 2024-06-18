@@ -10,4 +10,18 @@ aws dynamodb put-item --table-name fe-wa.m \
 ```
 
 
+## upd ( upd )
+
+```
+
+```
+
+
+## del ( del )
+
+```
+
+```
+
+
 

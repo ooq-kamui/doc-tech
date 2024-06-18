@@ -2,9 +2,21 @@
 # doc-tech
 
 
+## dynamo db
+
+item upd
+- fr ofc
+
+
+item del
+- research
+- draft
+
+
 ## git
 
 commit latest 1 can ?
+- research
 
 
 ## vim
@@ -18,14 +30,8 @@ arg space can ?
 - research
 
 
-## dynamo db
 
-item del
-- research
-
-item upd
-- research
-
+---
 
 ## pwsh
 
