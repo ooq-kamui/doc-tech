@@ -4,8 +4,6 @@
 
 ## color list
 
-wip :
-
 ```
 normal
 white
@@ -27,6 +25,11 @@ red
   changed = yellow
   untracked = yellow
 ```
+
+
+## ref
+
+https://www.atlassian.com/ja/git/tutorials/setting-up-a-repository/git-config
 
 
 
