@@ -2,15 +2,9 @@
 # doc-tech
 
 
-## dynamo db
+## pwsh
 
-item upd
-- fr ofc
-
-
-item del
-- research
-- draft
+alias, fnc , overwrite
 
 
 ## git
@@ -19,9 +13,16 @@ commit latest 1 can ?
 - research
 
 
+## dynamo db
+
+item upd
+- fr ofc
+
+
 ## vim
 
-cmd arg 2 type diff
+cmd arg
+- f-arg, q-arg, diff ?
 - research
 
 

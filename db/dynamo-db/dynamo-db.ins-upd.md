@@ -17,11 +17,4 @@ aws dynamodb put-item --table-name fe-wa.m \
 ```
 
 
-## del ( del )
-
-```
-
-```
-
-
 
