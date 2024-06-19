@@ -14,6 +14,16 @@ cmd arg str space can ?
 - " " ?
 - research
 
+srch rpl escape
+- srch
+```
+^ $ . * [ ] / ~ \
+```
+- rpl
+```
+
+```
+
 
 
 ---
