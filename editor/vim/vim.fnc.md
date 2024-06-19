@@ -3,9 +3,8 @@
 
 
 ## ref
-```
+
 https://vim-jp.org/vimdoc-ja/builtin.html#builtin-function-list
-```
 
 
 ## fnc ( built in )
@@ -111,11 +110,6 @@ strdisplaywidth() 表示された文字列のサイズ, タブを扱う
 
 setcellwidths()   文字の幅の上書き設定
 getcellwidths()   文字の幅の上書き設定値を取得する
-
-
-
-
-
 
 ```
 
