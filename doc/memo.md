@@ -6,6 +6,17 @@
 
 alias, fnc , overwrite
 
+```
+# Set-Alias dir "z" -Option AllScope # cannot be removed
+function dir_dmy {
+  param( $path )
+
+  z $path
+  p
+}
+Set-Alias dir "dir_dmy" -Option AllScope # cannot be removed
+```
+
 
 ## git
 

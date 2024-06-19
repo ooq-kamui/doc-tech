@@ -18,6 +18,7 @@ one drive
 $home\OneDrive\Documents\PowerShell
 ```
 
+
 ## env:path
 
 add
@@ -53,6 +54,27 @@ Copy-Item -Force -Path $dir1 -Destination $dir2/
 ```
 
 
+## rm
+
+```
+Remove-Item $path
+```
+
+
+## 既存の cmd を overwrite する
+
+dmy の function 名 を作り, alias `-Option AllScope` で上書きする
+
+```
+function dir_dmy {
+  param( $path )
+
+  z $path
+}
+Set-Alias dir "dir_dmy" -Option AllScope # cannot be removed
+```
+
+
 ## fzf
 
 PSFzf をinstall する必要がある
@@ -66,7 +88,6 @@ Install-Module -Name PSFzf -scope currentUser
 ```
 Get-InstalledModule | ? Name -eq PSFzf
 ```
-
 
 
 ## color setting
@@ -104,13 +125,13 @@ $PSStyle.FileInfo.Directory = $PSStyle.Foreground.White + $PSStyle.Background.Bl
 ```
 
 
-bell sound off
+## bell sound off
 
 ```
 Set-PSReadlineOption -BellStyle None
 ```
 
-cmdline 入力候補 の設定
+## cmdline 入力候補 の設定
 
 ```
 Set-PSReadLineOption -Colors @{ InlinePrediction = $PSStyle.Foreground.BrightCyan }
