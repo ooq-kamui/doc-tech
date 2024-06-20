@@ -25,6 +25,15 @@ srch rpl escape
 ```
 
 
+## pwsh
+
+upd
+
+```
+winget upgrade PowerShell
+```
+
+
 
 ---
 
