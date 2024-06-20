@@ -14,23 +14,17 @@ cmd arg str space can ?
 - " " ?
 - research
 
+
 srch rpl escape
+
 - srch
 ```
 ^ $ . * [ ] / ~ \
 ```
+
 - rpl
 ```
 
-```
-
-
-## pwsh
-
-upd
-
-```
-winget upgrade PowerShell
 ```
 
 

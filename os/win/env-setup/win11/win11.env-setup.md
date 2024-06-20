@@ -98,6 +98,8 @@ iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
 
 ## neovim plugin fzf-vim install
 
+.vimrc に fzf-vim を記述して install
+
 ```
 ```
 
