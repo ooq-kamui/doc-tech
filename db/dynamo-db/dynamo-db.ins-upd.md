@@ -10,10 +10,14 @@ aws dynamodb put-item --table-name fe-wa.m \
 ```
 
 
-## upd ( upd )
+## item upd ( upd )
 
 ```
-
+aws dynamodb update-item --table-name fe-wa.m \
+--key '{ "prt": {"S":"xx"}, "id": {"S": "xxx" }}' \
+--update-expression 'SET chara = :chara ' \
+--expression-attribute-values '{ ":chara": {"S": "kamui" } }' \
+--return-values ALL_NEW
 ```
 
 

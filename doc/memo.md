@@ -2,19 +2,6 @@
 # doc-tech
 
 
-## dynamo db
-
-item upd
-- fr ofc
-
-
-## vim
-
-cmd arg str space can ?
-- " " ?
-- research
-
-
 srch rpl escape
 
 - srch
@@ -26,6 +13,13 @@ srch rpl escape
 ```
 
 ```
+
+
+## vim
+
+cmd arg str space can ?
+- " " ?
+- research
 
 
 
