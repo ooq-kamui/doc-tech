@@ -4,6 +4,13 @@
 https://qiita.com/bonjiko/items/93e8fad618bd4b588b63
 
 
+## install
+
+```
+npm install -g @aws-amplify/cli
+```
+
+
 ## 基本的な subcmd
 
 ```
