@@ -2,6 +2,13 @@
 # doc-tech
 
 
+## unix-cmd
+
+awk
+
+
+## vim
+
 srch rpl escape
 
 - srch
@@ -14,8 +21,6 @@ srch rpl escape
 \ /
 ```
 
-
-## vim
 
 cmd arg str space can ?
 - " " ?
