@@ -2,6 +2,18 @@
 # keyboard sticker
 
 
+## win elecom
+
+key-normal
+- 13 x 12 mm
+
+fn
+- 13 x  6 mm
+
+tab
+- 18 x 12 mm
+
+
 ## mac book
 
 key-normal
