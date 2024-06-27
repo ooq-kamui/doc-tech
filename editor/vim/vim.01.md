@@ -334,7 +334,7 @@ neovim win
 ```
 
 
-## color set confirm
+## color name list confirm
 
 ```
 :so $VIMRUNTIME/syntax/colortest.vim

@@ -2,6 +2,11 @@
 # doc-tech
 
 
+## fish
+
+string join
+
+
 ## unix-cmd
 
 awk
