@@ -7,29 +7,20 @@
 string join
 
 
-## unix-cmd
+count
 
-awk
+
+contain
+
+
+set str $str aaa
 
 
 ## vim
 
-srch rpl escape
-
-- srch
-```
-^ $ . * [ ] / ~ \
-```
-
-- rpl
-```
-\ /
-```
-
-
 cmd arg str space can ?
 - " " ?
-- research
+  - ggl
 
 
 
