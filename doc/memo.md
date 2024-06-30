@@ -13,7 +13,8 @@ count
 contain
 
 
-set str $str aaa
+add
+- set str $str aaa
 
 
 ## vim
