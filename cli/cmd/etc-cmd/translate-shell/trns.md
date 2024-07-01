@@ -12,13 +12,9 @@ mac
 brew install translate-shell
 ```
 
-etc
+win
 
-https://github.com/soimort/translate-shell
-
-
-win はない
-
+はない
 
 
 ## command
