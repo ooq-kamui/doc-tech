@@ -78,6 +78,7 @@ http://fish.rubikitch.com/fish_key_reader/
 https://www.gfd-dennou.org/member/hiroki/homepage/main009.html
 ```
 
+
 ## vi mode
 
 ```
@@ -85,6 +86,7 @@ fish_vi_key_bindings
 
 fish_default_key_bindings
 ```
+
 
 ## 計算
 

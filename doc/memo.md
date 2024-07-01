@@ -7,7 +7,10 @@
 string join
 
 
-count
+list count
+
+
+line count
 
 
 contain
