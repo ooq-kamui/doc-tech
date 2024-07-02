@@ -2,22 +2,37 @@
 # doc-tech
 
 
+## unix-cmd
+
+date sub
+
+
 ## fish
 
+math -s1
+
+
 string join
-
-
-list count
 
 
 line count
 
 
-contain
+list
+- count
 
+- contains
 
-add
-- set str $str aaa
+```
+set lst aaa bbb ccc
+
+if contains $argv[1] $lst
+    echo "true"
+end
+```
+
+- add
+  - set str $str aaa
 
 
 ## vim
