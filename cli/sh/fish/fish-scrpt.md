@@ -2,15 +2,46 @@
 # fish script
 
 
+line count
+
+
 ## 真偽値
 
 ```
-真 : 0
-偽 : 1
+true  : 0
+false : 1
 ```
 
 
-## 演算子 ( test コマンドの オプション )
+## 配列  -  list
+
+### list の count ( 配列 の 個数 )
+
+```
+count $argv
+```
+
+
+### list に add ( 配列 に 追加 )
+
+```
+set lst $lst aaa
+```
+
+
+### list に val があるか ( in_ar )
+
+```
+contains
+set lst aaa bbb ccc
+
+if contains $argv[1] $lst
+    echo "true"
+end
+```
+
+
+## 演算子 ( test cmd の option )
 
 ### 文字列
 
@@ -27,17 +58,16 @@ STRING1 != STRING2  STRING1 と STRING2 が異なる
 ```
 -b FILE  ブロックデバイス
 -c FILE  キャラクタデバイス
--d FILE  ディレクトリ
--e FILE  存在する
--f FILE  通常のファイル
--g FILE  setgidアクセス権を持つ
--G FILE  存在し、ユーザと同じグループIDである
+-d FILE  directory
+-e FILE  path が存在する
+-f FILE  通常の file
+-g FILE  setgid アクセス権 を持つ
+-G FILE  存在し, ユーザと同じグループIDである
 -L FILE  シンボリックリンク
--O FILE  存在し、ユーザ所有である
+-O FILE  存在し, ユーザ所有である
 -p FILE  名前付きパイプ
 -r FILE  読み込み可能
--s FILE  ファイルサイズが0より大きい
-         (空ファイルではない)
+-s FILE  file size が 0 より大きい ( 空ファイルではない )
 -S FILE  ソケット
 -t FD    端末である
 -u FILE  setuidアクセス権を持つ
@@ -57,6 +87,7 @@ NUM1 -ge NUM2  NUM1 >= NUM2
 NUM1 -lt NUM2  NUM1 <  NUM2 
 NUM1 -le NUM2  NUM1 <= NUM2 
 ```
+
 整数のみサポート
 
 
@@ -76,6 +107,22 @@ COND1 -o COND2  COND1 と COND2 のどちらかが真
 ```
 コマンド置換 として解釈されるのを防ぐために
 \( とエスケープが必要
+
+
+
+## 文字列  -  string
+
+### 置換  -  replace
+
+```
+string replace "srch" "rpl" "target"
+```
+
+### 連結  -  join
+
+```
+string join , lst
+```
 
 
 

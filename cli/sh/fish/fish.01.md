@@ -2,39 +2,10 @@
 # fish
 
 
-## 文字列置換
+## config.fish 再読込
 
 ```
-string replace "srch" "rpl" "target"
-```
-
-## history
-
-history からの実行
-
-```
-tile
-と打ってから ctl-p
-で tile が含まれるコマンド履歴が直近から表示される
-ctl-j で実行
-```
-
-history から "xxx" を含むものを検索
-
-```
-history search --contains "xxx"
-```
-
-history から "xxx" を含むものを削除
-
-```
-history delete --contains "xxx"
-```
-
-下記でもいけるようではある
-
-```
-history delete "xxx"
+source ~/.config/fish/config.fish
 ```
 
 
@@ -47,13 +18,6 @@ history delete "xxx"
 
 ```
 http://fish.rubikitch.com/bind/
-```
-
-
-## config.fish 再読込
-
-```
-source ~/.config/fish/config.fish
 ```
 
 
@@ -88,10 +52,53 @@ fish_default_key_bindings
 ```
 
 
-## 計算
+## history
+
+history からの実行
+
+```
+tile
+と打ってから ctl-p
+で tile が含まれるコマンド履歴が直近から表示される
+ctl-j で実行
+```
+
+history から "xxx" を含むものを検索
+
+```
+history search --contains "xxx"
+```
+
+history から "xxx" を含むものを削除
+
+```
+history delete --contains "xxx"
+```
+
+下記でもいけるようではある
+
+```
+history delete "xxx"
+```
+
+
+## 計算  -  math
 
 ```
 math 1 + 1
+```
+
+小数点以下の桁数
+
+```
+math -s1
+```
+
+
+## file line count  ( wc -l )
+
+```
+count ( cat file_name )
 ```
 
 
