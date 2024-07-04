@@ -2,7 +2,7 @@
 # git diff
 
 
-## 概要のみ表示
+## 概要のみ表示 ( file の中身を表示しない )
 
 ### 差分情報のみを表示
 
@@ -19,7 +19,7 @@ git diff --name-only
 
 
 
-## 基本の説明
+## 基本
 
 ### 同種のものを引数で指定する場合
 
@@ -68,6 +68,9 @@ wip : 1つ上のと違いは.. ??
 ```
 git diff branch1 branch2
 ```
+
+`clone` 直後などの場合, `git switch` するなどしたあとでないと,
+できないときあり
 
 
 ### commit prv と commit latest の diff

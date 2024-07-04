@@ -4,22 +4,44 @@
 
 ## brew 自体の install
 
+hp のトップページに書いてある install cmd を実行する
+
+https://brew.sh/ja/
+
+
+上記の cmd 実行後, メッセージの最後に表示される cmd 実行する
+
+
+## brew 自体の update
+
 ```
-wip :
+brew update
 ```
 
 
 ## brew 自体の uninstall
 
 ```
-wip :
+wip:
 ```
 
 
-## install 済 の package ( app ) list view
+## cask とは
+
+wip:
+
+
+## package ( app ) list
 
 ```
 brew list
+```
+
+
+## package ( app ) の update
+
+```
+brew upgrade xxx
 ```
 
 

@@ -2,6 +2,18 @@
 # pwsh script
 
 
+## 改行を無視
+
+バックゥォート を 行末に書く
+
+ex
+
+```
+echo "aa   `
+bb   "
+```
+
+
 ## scope
 
 local var

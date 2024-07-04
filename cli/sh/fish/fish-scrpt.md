@@ -118,10 +118,18 @@ COND1 -o COND2  COND1 と COND2 のどちらかが真
 string replace "srch" "rpl" "target"
 ```
 
+
 ### 連結  -  join
 
 ```
 string join , lst
+```
+
+
+### ext 拡張子
+
+```
+string match -r '[^.]+$' $argv[1]
 ```
 
 

@@ -2,6 +2,13 @@
 # doc-tech
 
 
+## unix-cmd
+
+sed
+- cat_emp_not,
+  - case line emp: skip
+
+
 ## vim
 
 cmd arg str space can ?
