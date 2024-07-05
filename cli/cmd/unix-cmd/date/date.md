@@ -2,7 +2,17 @@
 # date
 
 
-## date format から unix time にする
+## date format y m d h s を 個別に覚えるより `%F %T` がおすすめ
+
+ex
+
+```
+$ date +"%F %T"
+2024-07-05 13:21:30
+```
+
+
+## date format から unix time
 
 ```
 date --date="2024-07-02T11:00:00" +"%s"

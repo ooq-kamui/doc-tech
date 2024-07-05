@@ -23,4 +23,11 @@ git log --date=format:'%Y-%m-%d %H:%M:%S'
 ```
 
 
+## file 指定
+
+```
+git log -p xxx/xxx/xxx.txt
+```
+
+
 
