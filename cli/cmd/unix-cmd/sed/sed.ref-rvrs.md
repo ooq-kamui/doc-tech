@@ -1,11 +1,10 @@
 
-# sed  -  use case
+# sed  -  ref rvrs
 
 
 ## file path 関連
 
-basename, dirname は標準入力を取れない,
-
+basename, dirname は標準入力を取れない, ため, 
 sed でやるほうが やりよい ( while read line よりも )
 
 reg exp は, 一見, 複雑だが, 一回 作ってしまえば, それ以上, 考えなくてよい
@@ -13,17 +12,26 @@ reg exp は, 一見, 複雑だが, 一回 作ってしまえば, それ以上, �
 fish function を作るなどしておけば なおよい
 
 
-### file path から 拡張子 ext のみ取得
+### file path から 拡張子 ext 取得
 
 ```
 sed 's|^.*\.\([^\.]*\)$|\1|'
 ```
 
 
-### file path から dir 部分を取得
+### file path から dir 取得
 
 ```
 sed 's|\(.*\)/.*|\1|'
+```
+
+
+### file path から file name 取得
+
+awk でやるほうが無難
+
+```
+awk -F/ '{print $NF}'
 ```
 
 
@@ -55,11 +63,16 @@ aaa: {} bbb: {}
 ```
 
 
+## 空行を削除
+
+```
+sed -e '/^[ \t]*$/ d'
+```
+
+
 ## カラム 抽出
 
-sed でないほうが無難かも
-
-awk でやるべし
+awk でやるほうが無難
 
 
 

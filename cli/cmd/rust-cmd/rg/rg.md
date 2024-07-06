@@ -27,14 +27,42 @@ endif
 ```
 
 
-## ignore 関連
+## ignore, exclude 除外 設定 について
 
-.gitignore は default で無視
+### 基本
 
-.gitignore を 無視しない
+default で 隠しファイル ( .xxx ) は search 対象外
+
+よって, `.gitignore` の内容も 対象外
+
+
+隠しファイル ( .xxx ) も search 対象とする
 
 ```
 --hidden
+```
+
+
+### ignore, exclude 設定 の記述
+
+```
+~/.ignore
+```
+
+に search 対象外とする file, dir を記述できる
+
+
+実行している dir の `.gitignore` `.ignore` が有効かは未調査
+
+wip:
+
+
+## 実行時の option の確認
+
+```
+--files
+--debug
+--trace
 ```
 
 
@@ -48,16 +76,16 @@ rg key dir
 ## 大文字小文字の区別
 
 ```
--S  smart
--s  区別する
 -i  区別しない
+-s  区別する
+-S  smart
 ```
 
 
 ## 単語検索
 
 ```
-rg -w ptrn
+rg -w ptn
 ```
 
 
