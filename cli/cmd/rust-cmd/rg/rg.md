@@ -11,61 +11,6 @@ brew install ripgrep
 ```
 
 
-## vim から call するための option
-
-```
---vimgrep
-```
-
-vim で :grep で ripgrep 実行
-
-```
-if executable('rg')
-    let &grepprg = 'rg --vimgrep'
-    set grepformat=%f:%l:%c:%m
-endif
-```
-
-
-## ignore, exclude 除外 設定 について
-
-### 基本
-
-default で 隠しファイル ( .xxx ) は search 対象外
-
-よって, `.gitignore` の内容も 対象外
-
-
-隠しファイル ( .xxx ) も search 対象とする
-
-```
---hidden
-```
-
-
-### ignore, exclude 設定 の記述
-
-```
-~/.ignore
-```
-
-に search 対象外とする file, dir を記述できる
-
-
-実行している dir の `.gitignore` `.ignore` が有効かは未調査
-
-wip:
-
-
-## 実行時の option の確認
-
-```
---files
---debug
---trace
-```
-
-
 ## dir 指定
 
 ```
@@ -96,7 +41,7 @@ rg ptn -g "*.lua" -g "*.md"
 ```
 
 
-## file name のみ表示
+## file name のみ 出力
 
 ```
 rg -l
@@ -107,13 +52,6 @@ rg -l
 
 ```
 rg -N
-```
-
-
-## file name 一括置換
-
-```
-rg 'Apple' -l | xargs sd 'Apple' 'Google'
 ```
 
 
@@ -146,18 +84,34 @@ rg key1.+key2
 順番固定となるが 諦める
 
 
-## cnf file name
+## マッチしない行を 出力
+
+```
+--invert-match
+```
+
+or
+
+```
+-v
+```
+
+
+## 空行 ( 空白行 ) を出力しない
+
+```
+rg -v -e '^[ \t]*$'
+```
+
+
+## cnf file
+
+### cnf file name
 
 `.ripgreprc`
 
 
-## cnf file path
-
-bash
-
-```
-export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
-```
+### cnf file path setting
 
 fish
 
@@ -165,14 +119,94 @@ fish
 set RIPGREP_CONFIG_PATH "$HOME/.ripgreprc"
 ```
 
+bash
+
+```
+export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
+```
+
+confirm
+
+```
+echo $RIPGREP_CONFIG_PATH
+```
+
 
 ## color setting
 
-.ripgreprc
+.ripgreprc に設定
 
 ```
 --colors=path:fg:cyan
 ```
+
+
+## ignore, exclude 除外 設定 について
+
+### 基本
+
+default で 隠しファイル ( .xxx ) は search 対象外
+
+よって, `.gitignore` の内容も 対象外
+
+
+隠しファイル ( .xxx ) も search 対象とする
+
+```
+--hidden
+```
+
+
+### ignore ( exclude ) 設定 について
+
+```
+~/.ignore
+```
+
+に search 対象外とする file, dir を記述できる
+
+
+実行している dir の `.gitignore` `.ignore` が有効かは未調査
+
+wip:
+
+
+## 実行時の option の確認
+
+```
+--files  対象のファイルをすべて列挙する
+         そもそもファイル見てんのか? のとき
+--debug  どの設定ファイルで何が有効になったのか
+--trace  どこで何がマッチしたのか?
+```
+
+
+## vim から call するための option
+
+```
+--vimgrep
+```
+
+vim で :grep で ripgrep 実行
+
+```
+if executable('rg')
+    let &grepprg = 'rg --vimgrep'
+    set grepformat=%f:%l:%c:%m
+endif
+```
+
+
+## file name 一括置換
+
+```
+rg 'Apple' -l | xargs sd 'Apple' 'Google'
+```
+
+
+## ref
+
+https://zenn.dev/megeton/articles/56b8a6a74e6394
 
 
 
