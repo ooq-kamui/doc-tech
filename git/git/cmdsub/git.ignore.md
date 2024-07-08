@@ -8,16 +8,16 @@
 
 ```
 git status --ignored
-
-# git status と見比べる
 ```
+
+git status と見比べて 確認
 
 
 ### ignore されている file を表示
+
 ```
 git ls-files --other --ignored --exclude-standard
 ```
-
 
 
 ---
@@ -57,7 +57,7 @@ dir/
 wild card 指定で 指定できる
 
 ```
-hoge.*.oog
+hoge.*.ogg
 ```
 
 拡張子で除外
@@ -84,8 +84,11 @@ dir/**/*.ts
 /aaa/bbb/ccc/dir/
 ```
 
+
 ---
+
 ## あとから .gitignore に 追加して, 管理対象から除外する
+
 .gitignore に file, dir を 追記
 
 ```
@@ -94,6 +97,7 @@ vi .gitignore
 
 .gitignore にあとから設定しても  
 既にリポジトリに登録されているものはリポジトリに残ったままとなる  
+
 このため, 下記の `管理対象から除外` を実行する
 
 
@@ -121,7 +125,7 @@ commit, push まで実行する
 
 > [!!]  
 > 先に file を del して push してしまった場合  
-> 上記の方法でも github の history からは消えない気がする  
+> 上記の方法でも github の history からは消えない ( 気がする )
 > これをちゃんとする方法を調べる
 
 
