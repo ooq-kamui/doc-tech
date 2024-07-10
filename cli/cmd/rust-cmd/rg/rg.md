@@ -2,15 +2,6 @@
 # rg  ( ripgrep )
 
 
-## install
-
-brew ( mac / c9 / linux )
-
-```
-brew install ripgrep
-```
-
-
 ## dir 指定
 
 ```
@@ -104,6 +95,15 @@ rg -v -e '^[ \t]*$'
 ```
 
 
+## 対象 file 数 の count
+
+fish
+
+```
+rg ptn -l | count
+```
+
+
 ## cnf file
 
 ### cnf file name
@@ -132,16 +132,7 @@ echo $RIPGREP_CONFIG_PATH
 ```
 
 
-## color setting
-
-.ripgreprc に設定
-
-```
---colors=path:fg:cyan
-```
-
-
-## ignore, exclude 除外 設定 について
+## ignore ( exclude ) 除外 関連 ( option )
 
 ### 基本
 
@@ -150,6 +141,8 @@ default で 隠しファイル ( .xxx ) は search 対象外
 よって, `.gitignore` の内容も 対象外
 
 
+### option
+
 隠しファイル ( .xxx ) も search 対象とする
 
 ```
@@ -157,27 +150,20 @@ default で 隠しファイル ( .xxx ) は search 対象外
 ```
 
 
-### ignore ( exclude ) 設定 について
-
-```
-~/.ignore
-```
-
-に search 対象外とする file, dir を記述できる
-
-
-実行している dir の `.gitignore` `.ignore` が有効かは未調査
-
-wip:
-
-
-## 実行時の option の確認
+## 実行時の option など の確認
 
 ```
 --files  対象のファイルをすべて列挙する
          そもそもファイル見てんのか? のとき
 --debug  どの設定ファイルで何が有効になったのか
 --trace  どこで何がマッチしたのか?
+```
+
+
+## file name 一括置換
+
+```
+rg 'Apple' -l | xargs sd 'Apple' 'Google'
 ```
 
 
@@ -194,13 +180,6 @@ if executable('rg')
     let &grepprg = 'rg --vimgrep'
     set grepformat=%f:%l:%c:%m
 endif
-```
-
-
-## file name 一括置換
-
-```
-rg 'Apple' -l | xargs sd 'Apple' 'Google'
 ```
 
 

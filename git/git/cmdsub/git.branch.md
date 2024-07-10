@@ -9,6 +9,14 @@ git branch
 ```
 
 
+## remote の branch list を表示
+
+```
+git fetch
+git branch -a
+```
+
+
 ## コミットの先端情報も表示したい場合
 
 ```

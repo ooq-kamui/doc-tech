@@ -65,6 +65,13 @@ key の行の下の行に差し込まれる
 key の行は消えない
 
 
+### 置き換える文字を 1 char ずつ 定義
+
+```
+sed -e 'y|srch_char_lst|rpl_char_lst|'
+```
+
+
 
 ## 位置指定
 

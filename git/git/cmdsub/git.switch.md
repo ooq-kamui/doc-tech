@@ -6,6 +6,23 @@ git checkout よりも使いやすい cmdsub として登場
 `git checkout` は `git switch` と `git restore` に分けられました
 
 
+## branch list
+
+```
+git branch
+```
+
+
+## branch list  -  remote
+
+リモート の ブランチ 一覧
+
+```
+git fetch
+git branch -a
+```
+
+
 ## branch を切り替える
 
 ```
