@@ -12,7 +12,8 @@
 
 ```
 [alias]
-    s = status
+  s = status
+  a = add .
 ```
 
 と設定すれば,
