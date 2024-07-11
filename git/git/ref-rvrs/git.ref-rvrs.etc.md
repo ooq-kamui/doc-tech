@@ -2,6 +2,13 @@
 # git  -  ref rvrs
 
 
+## 特定ファイルのみを 別 branch から取り込む
+
+```
+git checkout branch02_name -- file_path
+```
+
+
 ## push してない commit があるか
 
 ```

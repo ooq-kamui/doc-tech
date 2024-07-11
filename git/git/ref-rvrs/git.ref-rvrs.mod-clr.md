@@ -1,40 +1,45 @@
 
-# 修正を元に戻す 整理
-
+# git  -  修正を元に戻す
 
 https://www.atlassian.com/ja/git/tutorials/undoing-changes
 
 
 ## 概要
 
-- git checkout : ある commit の file 内容 を worktree に取り出す
+- git checkout
+  - ある commit の file 内容 を worktree に取り出す
   - 実行された commit を修正したりするわけではない
 
-- git commit   : --amend で 直前の commit を破棄して, 再 commit
+- git commit --amend
+  - 直前の commit を破棄して, 再 commit
 
-- git reset    : 指定した commit の状態へ, head, worktree, index を戻す
+- git reset
+  - 指定した commit の状態へ, head, worktree, index を戻す
   - 実行された commit を修正したりするわけではない
 
-- git restore  : worktree, index の file を head の内容に戻す
+- git restore
+  - worktree / index の file を head の内容に戻す
   - 実行された commit を修正したりするわけではない
   - 対象 commit を 現在の head とした git checkout, のようなもの
 
 
 使用度 低
 
-- git rebase   : commit 履歴を変更する
+- git rebase
+  - commit 履歴を変更する
 
-- git revert   : commit を削除する新しい commit を作成する
+- git revert
+  - commit を削除する新しい commit を作成する
 
 
 
 ## 基本
 
-基本的には, commit をやり直したいことが多い ( と思われる )
+基本的には, commit をやり直したいことが多い ( と思う )
 
-push 前, かつ, 1つ前の commit の修正 であれば, git commit --amend で修正する
+push 前, で, 1つ前の commit の修正 であれば, git commit --amend で修正する
 
-push 前, かつ, 2つ以上前の commit の修正は, さらなる commit で修正するほうが無難です
+push 前, で, 2つ以上前の commit の修正は, さらなる commit で修正するほうが無難です
 
 push 後, の場合は, さらなる commit で修正するほうが無難です
 

@@ -1,5 +1,5 @@
 
-# git
+# git  -  基本
 
 
 ## ref
@@ -24,7 +24,6 @@ local だけで
 - repository : commit で追加される
 
 の 3つがある
-
 
 
 ### HEAD とは

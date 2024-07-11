@@ -6,11 +6,14 @@
 
 wip : ...
 
+head とは ( 改めて ), その branch の 最新 commit のこと
 
-## option なし
 
-wip : おそらく
-worktree の file を head の内容に戻す `--worktree` と同じ
+## option なし の場合
+
+おそらく, 
+`--worktree` と同じ, worktree の file を head の内容に戻す
+wip : ^ confirm
 
 ```
 git restore file_name
@@ -37,5 +40,9 @@ git restore --staged file_name
 git restore --tree commit1 file_name
 ```
 
+
+## ref
+
+https://tracpath.com/docs/git-restore/
 
 

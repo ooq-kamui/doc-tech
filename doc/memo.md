@@ -2,6 +2,11 @@
 # doc-tech
 
 
+## git
+
+git rm
+
+
 ## vim
 
 cmd arg str space can ?

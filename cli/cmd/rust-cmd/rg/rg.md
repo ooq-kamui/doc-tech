@@ -61,13 +61,17 @@ file path 表示を 先頭の 1行にまとめない
 rg -e "ptn1" -e "ptn2" 
 ```
 
+```
+rg -e "ptn1|ptn2" 
+```
+
 
 ## and 検索
 
 option による複数単語指定はできない
 
 ```
-rg key1.+key2
+rg 'key1.+key2'
 ```
 
 のように 正規表現で指定する
@@ -80,8 +84,6 @@ rg key1.+key2
 ```
 --invert-match
 ```
-
-or
 
 ```
 -v
