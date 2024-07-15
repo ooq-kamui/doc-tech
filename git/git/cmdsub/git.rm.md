@@ -2,12 +2,20 @@
 # git rm
 
 
+## 基本
+
+wip:
+
+```
+wip:
+```
+
+
 ## wip: ...
 
 ```
 git rm --cached -r dir_name/
 ```
-
 
 
 ## ref
