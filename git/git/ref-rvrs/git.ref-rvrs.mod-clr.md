@@ -74,4 +74,15 @@ git reset --hard origin/main
 ```
 
 
+## q
+
+### `git commit --amend` したものが `push` 済 だった場合
+
+local を remote と同じに戻す
+
+```
+git reset origin/main
+```
+
+
 

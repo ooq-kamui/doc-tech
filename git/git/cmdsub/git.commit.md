@@ -27,7 +27,14 @@ git commit --amend
 
 ## q
 
-- `git commit --ammen -m 'cmnt'` できる?
+### `push` までしたあとに `git commit --amend` `git push` できる?
+
+
+
+
+
+### `git commit --amend -m 'cmnt'` できる?
+
 
 
 
