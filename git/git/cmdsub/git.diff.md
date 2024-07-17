@@ -99,3 +99,11 @@ file を指定する場合は ?
 
 
 
+## diff 結果を vimdiff で見る
+
+```
+git difftool ...
+```
+
+
+
