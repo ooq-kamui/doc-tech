@@ -34,4 +34,9 @@ git reset --hard origin/main
 別の local で上記を行う ことになる
 
 
+## q
+
+### local の現在の branch と pull で指定した branch が違うとどうなる?
+
+
 

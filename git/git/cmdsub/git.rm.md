@@ -4,18 +4,39 @@
 
 ## 基本
 
-wip:
+file or dir を worktree と staged から 削除 ( del ) する
+
+git での追跡をやめる
+
+git add と逆の動きをするもの
+
 
 ```
-wip:
+git rm -r dir_name/
+```
+
+```
+git rm filen_name
 ```
 
 
-## wip: ...
+worktree だけから削除し, staged には残す option はない
+
+
+
+## 対象 dir 配下を git 管理から削除
 
 ```
 git rm --cached -r dir_name/
 ```
+
+
+## option
+
+```
+--cached : staged を削除, worktree はそのまま
+```
+
 
 
 ## ref

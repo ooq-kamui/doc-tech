@@ -51,9 +51,11 @@ fetch を行っただけでは 他人の更新はプログラムへは取り込�
 
 
 ### tag を取り込む
+
 ```
 git fetch --tags
 ```
+
 ```
 git fetch -t
 ```
@@ -69,6 +71,7 @@ local repository には origin/branch1 といった形で branch が残ります
 ```
 git fetch --prune
 ```
+
 ```
 git fetch -p
 ```
@@ -83,7 +86,6 @@ pull は 内部で
 - branch の移動
 
 を順次実行するコマンドです
-
 
 
 
