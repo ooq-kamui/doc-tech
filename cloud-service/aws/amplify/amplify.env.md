@@ -51,6 +51,13 @@ amplify pull
 ```
 
 
+## env を 追加で pull
+
+```
+amplify pull --envName env_name
+```
+
+
 ## env の import
 
 ```
