@@ -2,16 +2,17 @@
 # netrw
 
 
-launch
+## launch
+
 ```
 :e .
 ```
 
-launch tab new
+## launch tab new
+
 ```
 :Tex .
 ```
-
 
 
 ```
@@ -24,10 +25,6 @@ i   ファイルツリーの表示形式を変更
 
 R   name re
 ```
-
-
-
-
 
 
 

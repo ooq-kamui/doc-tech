@@ -1,22 +1,11 @@
-*
-* pixelmator
-*
+
+# pixelmator
+
 
 調べる
-  mask
-  color 減色
 
-
-
-
-
-
-
-
-
-
-
-
+- mask
+- color 減色
 
 
 

@@ -1,25 +1,37 @@
-*
-* grep
-*
 
-配下のファイルをぜんぶ対象
+# grep
+
+
+## 配下のファイルをぜんぶ対象
+
+```
 grep -nr "xxx" .
+```
 
-  directory 指定で最後に / をつけると / が重複するので注意
+directory 指定で最後に / をつけると / が重複するので注意
 
 
-ファイル名を出力しない
+## ファイル名を出力しない
+
+```
 grep -h xxx.txt
+```
 
 
-file 拡張子 指定
+## file 拡張子 指定
+
+```
 grep -nr "xxx" --include "*.lua" .
+```
 
 
-単語検索
+## 単語検索
+
+```
 grep -nrw "xxx" .
+```
 
-
+```
 [[:alnum:]]   英数字        [0-9A-Za-z]
 [[:alpha:]]   英字          [A-Za-z]
 [[:digit:]]   数字          [0-9]
@@ -28,14 +40,18 @@ grep -nrw "xxx" .
 [[:blank:]]   space tab
 [[:punct:]]   記号          !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
 [[:xdigit:]]  16進数        [0-9A-Fa-f]
+```
 
 
+```
 hilight color
 export GREP_COLOR="1;32"
+```
 
 https://wiki.archlinux.jp/index.php/コンソールのカラー出力
 
 
+```
 color
 Black         0;30
 Blue          0;34
@@ -53,12 +69,9 @@ Light Red     1;31
 Light Purple  1;35
 Yellow        1;33
 White         1;37
+```
 
 http://www.tldp.org/HOWTO/Bash-Prompt-HOWTO/x329.html
-
-
-
-
 
 
 

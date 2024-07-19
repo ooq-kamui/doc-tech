@@ -2,9 +2,13 @@
 # launchctl  -  plist
 
 
+```
 <label> : xxx.plist の xxx
+```
+
 
 ### 確認
+
 ```
 launchctl list <label>
 
@@ -12,16 +16,19 @@ launchctl list | grep xx
 ```
 
 ### 登録
+
 ```
 launchctl load ~/Library/LaunchAgents/<label>.plist
 ```
 
 ### 削除
+
 ```
 launchctl unload ~/Library/LaunchAgents/<label>.plist
 ```
 
 ### テスト実行
+
 ```
 launchctl start <label>
 ```
@@ -30,6 +37,7 @@ launchctl start <label>
 ## pc 起動時に自動登録
 
 ### dir
+
 ```
 ~/Library/LaunchAgents/<label>.plist
 ```
@@ -42,6 +50,7 @@ symbolic link でも 可
 
 
 ## key について
+
 ```
 Label                 launchd のジョブの名前
                       ファイル名と同じ ( label.plist )
@@ -61,6 +70,7 @@ StartInterval         実行日時のインターバル指定
 
 
 ## sample
+
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">

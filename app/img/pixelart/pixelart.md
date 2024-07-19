@@ -1,13 +1,12 @@
-*
-* pixelart
-*
 
-* todo
+# pixelart
 
 
-*
-* 既成作品 参考
-*
+## todo
+
+
+
+## 既成作品 参考
 
 fe if
 
@@ -35,9 +34,9 @@ kamiko
 
 hyper light drifter
 
-*
-* 練習してみる
-*
+
+## 練習してみる
+
 
 
 
