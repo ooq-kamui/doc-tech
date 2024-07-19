@@ -1,7 +1,6 @@
 
 # amplify pull
 
-
 deploy されている 実行環境上の src を cloud9 に 落として配置する
 
 
@@ -10,7 +9,6 @@ deploy されている 実行環境上の src を cloud9 に 落として配置�
 ```
 amplify pull
 ```
-
 
 
 ## 初回実行, および 設定
@@ -53,12 +51,13 @@ Run 'amplify pull' to sync future upstream changes.
 
 
 
-
 ## question
 
 q. pull 先の紐づきはどこで設定している ?
 
 a. amplify pull の初回実行で設定する
+- `amplify env checkout env_name`
+  - `amplify env list` で確認
 
 
 

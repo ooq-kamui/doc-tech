@@ -33,6 +33,11 @@ set lst $lst aaa
 
 ```
 contains
+```
+
+ex
+
+```
 set lst aaa bbb ccc
 
 if contains $argv[1] $lst
@@ -41,19 +46,20 @@ end
 ```
 
 
-## 演算子 ( test cmd の option )
+## test cmd の option ( 演算子)
 
 ### 文字列
 
 ```
--z STR  STR が 空文字
--n STR  STR が 1文字以上の文字列 ( 空文字でない )
+-z STR              : STR が 空文字
+-n STR              : STR が 1文字以上の文字列 ( 空文字でない )
 
-STRING1 =  STRING2  STRING1 と STRING2 が同じ
-STRING1 != STRING2  STRING1 と STRING2 が異なる
+STRING1 =  STRING2  : STRING1 と STRING2 が同じ
+STRING1 != STRING2  : STRING1 と STRING2 が異なる
+                      ex: if test $str1 = $str2  # test は必要
 ```
 
-### ファイルとディレクトリ関連
+### file, dir
 
 ```
 -b FILE  ブロックデバイス
@@ -105,32 +111,9 @@ COND1 -o COND2  COND1 と COND2 のどちらかが真
 ```
 ( EXPRESSION ) は EXPRESSION の値を返す
 ```
+
 コマンド置換 として解釈されるのを防ぐために
 \( とエスケープが必要
-
-
-
-## 文字列  -  string
-
-### 置換  -  replace
-
-```
-string replace "srch" "rpl" "target"
-```
-
-
-### 連結  -  join
-
-```
-string join , lst
-```
-
-
-### ext 拡張子
-
-```
-string match -r '[^.]+$' $argv[1]
-```
 
 
 

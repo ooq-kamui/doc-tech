@@ -17,6 +17,8 @@ amplify env add dev
 
 ここで追加しているのは backend
 
+すでに cloud にある env_name は指定できない
+
 
 ## env の 切り替え
 
@@ -38,7 +40,10 @@ amplify env get
 amplify env pull
 ```
 
-local での修正を破棄して, cloud の状態に 戻す
+
+## local での修正を破棄して, cloud の状態に 戻す
+
+対象 env が選択されている状態で
 
 ```
 amplify env pull --restore
@@ -50,11 +55,13 @@ or
 amplify pull
 ```
 
+上の 2つは 同じ
+
 
 ## env を 追加で pull
 
 ```
-amplify pull --envName env_name
+amplify pull --appId app_id --envName env_name
 ```
 
 
