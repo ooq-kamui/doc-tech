@@ -12,6 +12,11 @@ true  : 0
 false : 1
 ```
 
+## continue
+
+continue は ありません ( たぶん )
+
+
 
 ## 配列  -  list
 
@@ -51,13 +56,25 @@ end
 ### 文字列
 
 ```
--z STR              : STR が 空文字
--n STR              : STR が 1文字以上の文字列 ( 空文字でない )
+-z str              : str が 空文字
+-n str              : str が 1文字以上
 
 STRING1 =  STRING2  : STRING1 と STRING2 が同じ
 STRING1 != STRING2  : STRING1 と STRING2 が異なる
-                      ex: if test $str1 = $str2  # test は必要
 ```
+
+ex
+
+```
+if test "$str1" = "$str2"
+
+```
+
+変数を見る 場合は, `""` で囲むのが無難,
+あくまでも文字列の比較のため
+
+`=` `!=` でも `test` は必要
+
 
 ### file, dir
 
@@ -114,6 +131,13 @@ COND1 -o COND2  COND1 と COND2 のどちらかが真
 
 コマンド置換 として解釈されるのを防ぐために
 \( とエスケープが必要
+
+
+## stdin を 変数 に読み込む 
+
+```
+set list read
+```
 
 
 

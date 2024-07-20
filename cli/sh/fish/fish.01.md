@@ -82,19 +82,6 @@ history delete "xxx"
 ```
 
 
-## 計算  -  math
-
-```
-math 1 + 1
-```
-
-小数点以下の桁数
-
-```
-math -s1
-```
-
-
 ## file line count  ( wc -l )
 
 ```
