@@ -4,15 +4,12 @@
 
 ## pwsh
 
+history del
+- cmd, method 
+
+
 function
 - override
-
-
-
-## doc-tech whole
-
-file inside
-- txt > md
 
 
 
