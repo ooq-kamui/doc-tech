@@ -2,7 +2,9 @@
 # git init
 
 
-## 初回
+## まっさらな local から repository を新規作成
+
+### 初回
 
 repository cre から push まで
 
@@ -36,9 +38,8 @@ git remote add origin github-url
 git push origin master
 ```
 
----
 
-## 2回目以降
+### 2回目以降
 
 修正 file の push まで
 
@@ -60,7 +61,6 @@ push ( commit された file を github に upload )
 git push origin master
 ```
 
----
 
 ## repository の状態を確認
 
@@ -68,14 +68,14 @@ git push origin master
 git status
 ```
 
----
+
 
 ## すでにある dir 配下の file 群を repository 化する
 
-project dir に移動
+prj dir に移動
 
 ```
-mv prj-dir
+cd prj-dir
 ```
 
 リポジトリを作成
@@ -92,8 +92,10 @@ git init
 git status
 ```
 
-git で管理されていない file が表示される  
+git で管理されていない file が表示される
+
 エラーが発生しなければ ok
+
 
 .gitignore を作成
 
@@ -103,6 +105,7 @@ vi .gitignore
 
 対象から除外する file や dir を 記述して保存
 
+
 .gitignore に登録したもの以外 の file をまとめて stage に add する
 
 ```
@@ -110,8 +113,7 @@ git add -A
 ```
 
 
-
-## commit
+### commit
 
 commit msg つきで commit
 
@@ -125,7 +127,10 @@ commit msg をつけない場合
 git commit ???
 ```
 
-追加した index  ( ファイルの変更点 ) を github に作成
+
+### 追加した index  ( ファイルの変更点 ) を github に作成
+
+github の repository と紐づける
 
 ```
 git remote add origin https://github.com/ooq-kamui/cnf
@@ -137,9 +142,8 @@ github に repository を作成
 github.com の ui 上から作成する
 ```
 
----
 
-## push
+### push
 
 push
 

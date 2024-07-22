@@ -11,9 +11,8 @@
 ### for
 
 
-
-
 ## var
+
 
 ## cp or ref
 
@@ -44,6 +43,11 @@ tst()
 print(a)
 # => 1
 ```
+
+
+## indent tidy
+
+
 
 
 

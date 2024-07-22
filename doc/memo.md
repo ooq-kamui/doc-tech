@@ -2,11 +2,25 @@
 # doc-tech
 
 
-## vim
+## git
 
-cmd arg str space can ?
-- " " ?
-  - ggl
+remote master > main
+
+
+## unix-cmd
+
+rsync
+
+
+cp -rf ?
+- case alias `cp -i`
+- use `command cp -rf`
+
+
+## docusaurus
+
+err 対応方法
+- `echo "" >> err_file_path`
 
 
 

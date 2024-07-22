@@ -2,6 +2,33 @@
 # git merge
 
 
+## 基本
+
+別 branch ( head ) を 現在の branch へ取り込む
+
+```
+git merge other_branch
+```
+
+
+## faq
+
+`git merge` で
+
+```
+fatal: refusing to merge unrelated histories
+```
+
+が出た場合
+
+```
+git merge --allow-unrelated-histories target_branch
+```
+
+で いける
+
+
+
 ## git merge で vim を使う
 
 ```

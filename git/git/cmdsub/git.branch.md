@@ -53,4 +53,11 @@ git checkout branch_name
 ```
 
 
+## local branch を削除する
+
+```
+git branch -d branch_name
+```
+
+
 
