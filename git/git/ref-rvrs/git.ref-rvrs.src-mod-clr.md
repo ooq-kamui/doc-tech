@@ -1,5 +1,5 @@
 
-# git  -  修正を元に戻す
+# git  -  src の修正を元に戻す
 
 https://www.atlassian.com/ja/git/tutorials/undoing-changes
 
@@ -10,17 +10,17 @@ https://www.atlassian.com/ja/git/tutorials/undoing-changes
   - ある commit の file 内容 を worktree に取り出す
   - 実行された commit を修正したりするわけではない
 
-- git commit --amend
-  - 直前の commit を破棄して, 再 commit
+- git restore
+  - worktree / index の file を head の内容に戻す
+  - 実行された commit を修正したりするわけではない
+  - 対象 commit を 現在の head とした git checkout, のようなもの
 
 - git reset
   - 指定した commit の状態へ, head, worktree, index を戻す
   - 実行された commit を修正したりするわけではない
 
-- git restore
-  - worktree / index の file を head の内容に戻す
-  - 実行された commit を修正したりするわけではない
-  - 対象 commit を 現在の head とした git checkout, のようなもの
+- git commit --amend
+  - 直前の commit を破棄して, 再 commit
 
 
 使用度 低
