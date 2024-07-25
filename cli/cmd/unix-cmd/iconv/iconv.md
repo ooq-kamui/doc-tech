@@ -9,8 +9,15 @@ iconv -f mb_code_fr -t mb_code_to file_name
 ```
 
 ```
-cat | iconv -f mb_code_fr -t mb_code_to
+cat file_name | iconv -f mb_code_fr -t mb_code_to
 ```
+
+ex
+
+```
+cat file_name.txt | iconv -f sjis -t utf8 > file_name.utf8.txt
+```
+
 
 ## mb_code
 

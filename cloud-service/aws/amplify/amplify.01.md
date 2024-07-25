@@ -1,7 +1,5 @@
 
-# amplify cli
-
-https://qiita.com/bonjiko/items/93e8fad618bd4b588b63
+# はじめての amplify cli
 
 
 ## install
@@ -98,6 +96,11 @@ amplify add api               # api を作成
 ```
 amplify add hosting           # deploy method select
 ```
+
+
+## ref
+
+https://qiita.com/bonjiko/items/93e8fad618bd4b588b63
 
 
 

@@ -2,6 +2,13 @@
 # doc-tech
 
 
+## ampliry
+
+at mac
+- install
+- amplify config
+
+
 ## git
 
 remote master > main
