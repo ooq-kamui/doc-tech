@@ -1,5 +1,5 @@
 
-# scrpt srch  -  vim
+# srch  -  vim script
 
 
 ## escape

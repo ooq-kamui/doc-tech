@@ -31,7 +31,9 @@ v : グローバル, vimの定義
 ```
 
 
-## for
+## loop
+
+### for
 
 ```
 for val in range(1, 9)
@@ -49,7 +51,7 @@ for val in [1, 2, 3]
 endfor
 ```
 
-## while
+### while
 
 break も使える
 
@@ -62,6 +64,13 @@ while <cnd>
 
 endwhile
 ```
+
+continue も使える
+
+
+do while はありません ( たぶん )
+
+
 
 ## 文字列
 

@@ -8,6 +8,10 @@
 npm install -g @aws-amplify/cli
 ```
 
+ref
+
+https://qiita.com/Toyoizumi-Hiroyuki/items/64e89a12f2c004d75194
+
 
 ## 基本的な subcmd
 

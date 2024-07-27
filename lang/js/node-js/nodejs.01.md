@@ -8,11 +8,13 @@ server で実行される javascript
 
 nodebrew で install が無難
 
+
 ### brew で nodebrew を install
 
 ```
 brew install nodebrew
 ```
+
 
 ### nodebrew で nodejs を install
 
@@ -35,6 +37,7 @@ output
 v.16.6.0
 ```
 
+
 ### nodebrew で nodejs の ver 指定
 
 ```
@@ -47,7 +50,6 @@ nodebrew use v16.6.10
 ```
 nodebrew uninstall vxx.x.xx
 ```
-
 
 
 ### npm が使えなくなったとき
