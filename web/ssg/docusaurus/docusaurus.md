@@ -165,6 +165,9 @@ npm run docusaurus serve
 npm install --save @easyops-cn/docusaurus-search-local
 ```
 
+`-g` で global に入れてもダメのよう
+
+
 docusaurus.config.js を編集
 
 下記を追記
@@ -270,6 +273,16 @@ docusaurus.config.js を編集
           // editUrl:
           //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
 ```
+
+
+## 謎の link 不正エラーが出た場合
+
+とりあえず,
+markdown file すべてに対して 空行 1行追加
+
+で, 再 build で直る
+
+詳細不明
 
 
 

@@ -13,6 +13,13 @@ ref
 https://qiita.com/Toyoizumi-Hiroyuki/items/64e89a12f2c004d75194
 
 
+はじめに,
+`amplify configure` で user ( iam ) setting してから 使う
+
+[`amplify configure`](amplify.configure.md )
+
+
+
 ## 基本的な subcmd
 
 ```

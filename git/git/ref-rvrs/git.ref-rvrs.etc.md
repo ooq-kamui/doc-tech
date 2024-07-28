@@ -61,4 +61,15 @@ git log
 ```
 
 
+## git init したら, defautl branch が master だったとき
+
+main に直したい場合
+
+branch 名 変更
+
+```
+git branch -m master main
+```
+
+
 

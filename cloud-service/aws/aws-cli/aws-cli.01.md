@@ -1,31 +1,47 @@
 
-# awscli
+# aws-cli
 
 
 ## install
 
-awscli は cloud9 には初めから install されている
-( たぶん )
+### cloud9
+
+初めから install されている
 
 
-## configure ( config )
+### mac
 
-確認
+ref  
+https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/getting-started-install.html
+
+```
+curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
+```
+
+```
+sudo installer -pkg AWSCLIV2.pkg -target /
+```
+
+
+## aws configure ( config )
+
+### 確認
 
 ```
 aws configure list
 ```
 
-`amplify configure` で設定していれば, そちらと同じかもしれない ?
+`amplify configure` で設定していれば, そちらと同じかもしれない ? ( 未確認 )
 
 
-setting
-
-clout9 の場合は 自分で setting しなくても基本的にはいいはず
+### 設定
 
 ```
 aws configure
 ```
+
+cloud9 の場合は
+とくに自分で 設定 しなくてもいい はず ( 基本的には )
 
 
 
