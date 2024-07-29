@@ -2,6 +2,13 @@
 # fish
 
 
+## install
+
+```
+brew install fish
+```
+
+
 ## config.fish 再読込
 
 ```

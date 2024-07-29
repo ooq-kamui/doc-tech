@@ -1,4 +1,7 @@
 
+# mac setting init, install
+
+
 ## brew
 
 https://zenn.dev/myb/articles/4b1dd3821703aa2ac95b

@@ -9,6 +9,13 @@
 ```
 
 
+## .vimrc path を確認
+
+```
+:echo $VIM
+```
+
+
 ## cmd line から複数ファイル を tab で起動
 
 ```
