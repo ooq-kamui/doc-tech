@@ -83,17 +83,54 @@ sudo yum install libstdc++.x86_64
 
 err 解消されない
 
-パスを確認
+share lib path を確認
 
 ```
 sudo ldconfig -p | grep stdc
 ```
 
+or
+
+```
+sudo ldconfig -v
+```
+
 問題なさそう
 
-いったん, 諦める ( bash でがまん )
+cache clear
+
+```
+sudo ldconfig
+```
+
+解消されない
+
+```
+cat /etc/ld.so.conf
+include ld.so.conf.d/*.conf
+```
+
+```
+ll /etc/ld.so.conf.d/
+total 0
+```
+
+こちらは 確かに 空である..
+
+では `sudo ldconfig -v` `sudo ldconfig -p` の表示は何なのか..?
+
+try
+
+上記の設定
+
+それでもダメなら
+
+`LD_LIBRARY_PATH` を設定してみる
+
+doing..
 
 
+ムリなら, いったん, 諦める ( bash を使用 )
 
 
 
