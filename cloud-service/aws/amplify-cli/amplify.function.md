@@ -17,19 +17,31 @@ amplify add function
 
 ## function 個別 削除 ( remove )
 
-console から 削除するのが無難
+```
+amplify function remove function01
+```
 
+で function 個別削除 できる
+
+
+function name 引数指定なし
 
 ```
 amplify function remove
 ```
 
-をやると, function すべて削除 ( category function ごと削除 )
-される ( たぶん )
+だと, リストから選択 となる
 
-やらないのが無難
+amplify push して反映
 
-( sndbox で 要確認 )
+```
+amplify push function function01
+```
+
+
+console で確認
+
+
 
 
 

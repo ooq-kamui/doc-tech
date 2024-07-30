@@ -22,4 +22,11 @@ $home\AppData\Local\nvim-data\shada
 の中の file をすべて削除する
 
 
+## or 検索
+
+```
+/\(hoge\|fuga\)
+```
+
+
 
