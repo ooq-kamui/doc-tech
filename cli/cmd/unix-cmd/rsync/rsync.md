@@ -32,4 +32,16 @@ rsync -av -e ssh --delete     \
 ```
 
 
+## local dir どうしでも可
+
+```
+set dev_dir docs01
+set rel_dir docs02
+
+rsync -av --delete \
+  $dev_dir/        \
+  $rel_dir         \
+```
+
+
 
