@@ -275,6 +275,28 @@ docusaurus.config.js を編集
 ```
 
 
+### sidebar を閉じる
+
+docusaurus.config.js を編集
+
+docs の場合
+
+```
+  // :
+  themeConfig:
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    ({
+      // :
+      docs: {
+        sidebar: {
+          hideable: true,
+        },
+      },
+      // :
+```
+
+
+
 ## 謎の link 不正エラーが出た場合
 
 とりあえず,

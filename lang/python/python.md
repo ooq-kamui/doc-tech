@@ -14,13 +14,13 @@
 ## var
 
 
-## cp or ref
+### cp or ref
 
 list ( ary ) は ref
 
 
 
-## var scope
+### var scope
 
 何も指定しないと local になる
 
@@ -43,6 +43,15 @@ tst()
 print(a)
 # => 1
 ```
+
+
+### var type
+
+```
+a = 1
+print(type(a))
+```
+
 
 
 ## indent tidy
