@@ -11,12 +11,6 @@ a:n    n番目の引数
 a:000  すべての引数の配列
 
 
-# unix-cmd
-
-ldd
-- コマンドで使用されている lib を表示する
-
-
 ## git
 
 remote master > main
