@@ -10,6 +10,8 @@ https://vim-jp.org/vimdoc-ja/builtin.html#builtin-function-list
 ## fnc ( built in )
 
 ```
+match
+
 match({expr}, {pat} [, {start} [, {count}]])
 数値:  {expr}内で{pat}がマッチする位置
 

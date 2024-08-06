@@ -2,13 +2,14 @@
 # python
 
 
-## koubun
+## 構文
 
 
 ### if
 
 
 ### for
+
 
 
 ## var
@@ -53,10 +54,32 @@ print(type(a))
 ```
 
 
+## list
+
+### list の末尾に 別の list を連結 ( 結合 )
+
+```
+a = [1, 2, 3]
+b = [4, 5, 6]
+
+a.extends(b)
+```
+
+
+
+## string
+
+### 文字列が 数字 かどうか
+
+```
+isnumeric()
+```
+
+
 
 ## indent tidy
 
-
+wip:
 
 
 
