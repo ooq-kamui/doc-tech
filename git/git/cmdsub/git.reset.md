@@ -90,7 +90,5 @@ add の取り消し をしたい場合
 git reset --mixed HEAD
 ```
 
-上記で add の取り消しと同等となる
-
 
 
