@@ -41,11 +41,19 @@ git config --local credential.helper store
 ```
 
 
-## ref
+### ref
 
 https://docs.github.com/ja/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens
 
 https://dev.classmethod.jp/articles/github-personal-access-tokens/
+
+
+
+## remote の branch 名 を master > main に変更
+
+github の gui 上から変更する
+
+
 
 
 
