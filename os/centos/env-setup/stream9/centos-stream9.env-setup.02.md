@@ -95,6 +95,14 @@ alias ll
 
 ## z ( d )
 
+by brew
+
+```
+brew install z
+```
+
+ref :
+https://formulae.brew.sh/formula/z
 
 
 ## fd
