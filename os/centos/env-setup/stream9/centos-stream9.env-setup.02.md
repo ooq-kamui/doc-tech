@@ -95,14 +95,38 @@ alias ll
 
 ## z ( d )
 
-by brew
-
 ```
 brew install z
 ```
 
-ref :
-https://formulae.brew.sh/formula/z
+err
+
+```
+==> Installing gcc
+Error: An exception occurred within a child process:
+  RuntimeError: /home/linuxbrew/.linuxbrew/opt/flex not present or broken
+Please reinstall flex. Sorry :(
+```
+
+```
+brew install flex
+```
+
+```
+brew reinstall z
+```
+
+入ったが, brew のは fish では動かないぽい..
+
+
+fisher のを入れる
+
+```
+fisher install jethrokuan/z
+```
+
+cnf fish fnc の既存のを削除して, try re, で, success
+
 
 
 ## fd
@@ -128,6 +152,13 @@ https://formulae.brew.sh/formula/z
 ## git
 
 ### cnf push
+
+
+
+
+
+
+## nginx
 
 
 
