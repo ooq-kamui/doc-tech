@@ -12,7 +12,21 @@ true  : 0
 false : 1
 ```
 
-## continue
+
+
+## loop
+
+### for
+
+```
+for item in $list
+
+  echo $item
+end
+```
+
+
+### continue
 
 continue は ありません ( たぶん )
 
@@ -49,6 +63,23 @@ if contains $argv[1] $lst
     echo "true"
 end
 ```
+
+
+### list を 列挙記述 で 作成
+
+改行を無視を活用
+
+```
+set lst \
+  a     \
+  b     \
+  c     \
+
+for $i in $lst
+  echo x $i
+end
+```
+
 
 
 ## test cmd の option ( 演算子)

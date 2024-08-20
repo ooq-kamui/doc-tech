@@ -9,11 +9,31 @@ string replace "srch" "rpl" "target"
 ```
 
 
+## split  分割
+
+```
+string split ' '  $lst
+```
+
+
 ## join  連結
 
 ```
-string join , lst
+string join , $lst
 ```
+
+
+## here document
+
+```
+string trim '
+a
+b
+'
+
+? wip:
+```
+
 
 
 ## match

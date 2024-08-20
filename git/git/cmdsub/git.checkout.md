@@ -27,6 +27,12 @@ dir ごとに, この dir は この branch と初めに用途を決め,
 ( 自分としては )
 
 
+## branch 切り替え 強制
+
+```
+git checkout -f branch_name
+```
+
 
 ## commit1 の file1 を worktree へ取り出す
 
