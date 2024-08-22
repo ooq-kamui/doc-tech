@@ -29,6 +29,8 @@ fd ptn dir
 -I            .gitignore, .ignore, .fdignore を含める
 
 -L  --follow  symbolic link を対象にする
+
+-d            max depth
 ```
 
 

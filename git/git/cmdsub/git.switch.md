@@ -41,7 +41,7 @@ git switch -c branch_name_new
 
 git switch は worktree に変更があった場合に,
 変更がそのままになる
-のかもしれない
+, のかもしれない
 
 
 
