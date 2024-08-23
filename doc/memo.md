@@ -2,9 +2,12 @@
 # doc-tech
 
 
-## xxx
+## git
 
-xxx
+cmdsub h1 tidy
+
+
+index > staged
 
 
 
