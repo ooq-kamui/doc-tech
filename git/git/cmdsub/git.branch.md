@@ -2,7 +2,7 @@
 # git branch
 
 
-## branch list, および 現在の branch を表示
+## branch list, 現在の branch を表示
 
 ```
 git branch
@@ -13,11 +13,16 @@ git branch
 
 ```
 git fetch
+```
+
+のあと
+
+```
 git branch -a
 ```
 
 
-## コミットの先端情報も表示したい場合
+## コミットの先端情報も表示する
 
 ```
 git branch -v
@@ -46,17 +51,24 @@ git branch -m master main
 
 ## branch を切り替える
 
-branch の切り替えは `git branch` ではないので注意
+branch の切り替えは `git branch` ではなく checkout, または switch
 
 ```
 git checkout branch_name
 ```
 
 
-## local branch を削除する
+## local branch を削除
 
 ```
 git branch -d branch_name
+```
+
+
+## remote branch を削除
+
+```
+git push origin --delete branch_name
 ```
 
 

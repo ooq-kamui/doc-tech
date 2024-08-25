@@ -4,11 +4,17 @@
 
 ## 基本
 
-別 branch ( head ) を 現在の branch へ取り込む
+別の branch ( の commit head ) を 現在の branch へ取り込む
 
 ```
-git merge other_branch
+git merge branch_other
 ```
+
+
+### 補足
+
+`git pull` は `git fetch` + `git merge FETCH_HEAD`
+
 
 
 ## faq

@@ -4,7 +4,24 @@
 
 ## 基本
 
-commit から worktree  へ file を取り出す
+基本は
+
+- ある commit の file を worktree  へ取り出す
+
+なのだが, 実質の用途としては 下記
+
+
+- commit を指定した場合
+  - ある commit の file を worktree  へ取り出す
+
+  - 指定 commit が head の場合
+    - worktree の file 変更 を破棄
+
+
+- branch を指定した場合
+  - branch 切り替え
+    - 指定 branch の commit head の 全 file が worktree に取り出される
+    - 現在の branch も 指定 branch になる
 
 
 
@@ -16,18 +33,12 @@ commit から worktree  へ file を取り出す
 git checkout branch_name
 ```
 
-注意
+自分としては,
+branch の切り替え は頻繁にやらないのが無難 ( 慣れるまで )
 
-branch 切り替えの用途に使用する
-
-が ( 自分としては ),
-branch の切り替え は頻繁にやらないのが無難
-
-dir ごとに, この dir は この branch と初めに用途を決め,
-動かさないほうが無難
+dir ごとに, この dir は この branch と用途を決め, 動かさない
 
 それよりも, 修正を破棄する用途に使用する
-( 自分としては )
 
 
 ### branch 切り替え 強制
@@ -69,14 +80,22 @@ git checkout HEAD -- file_path
 
 
 
-## 特定 commit 取り出し 用途
+## 特定 commit の file 取り出し 用途
 
-### commit1 の file1 を worktree へ取り出す
+### commit01 の file01 を worktree へ取り出す
 
-現在の worktree の file1 は破棄される
+現在の worktree の file01 は破棄される
 
 ```
-git checkout commit1 -- file1
+git checkout commit01 -- file01
+```
+
+
+
+## option
+
+```
+-b  新しい branch を作成
 ```
 
 

@@ -12,6 +12,13 @@ git fetch origin main
 git merge FETCH_HEAD
 ```
 
+補足
+
+```
+FETCH_HEAD : fetch した remote の 同 branch の 最新 commit
+```
+
+
 
 ## git pull -f ( 強制 ) はありません
 

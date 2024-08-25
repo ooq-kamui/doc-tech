@@ -14,6 +14,7 @@ remote: Please see https://github.blog/2020-12-15-token-authentication-requireme
 fatal: Authentication failed for 'https://github.com/ooq-kamui/cnf.git/'
 ```
 
+
 ### slove
 
 slove 1
@@ -52,7 +53,6 @@ https://dev.classmethod.jp/articles/github-personal-access-tokens/
 ## remote の branch 名 を master > main に変更
 
 github の gui 上から変更する
-
 
 
 
