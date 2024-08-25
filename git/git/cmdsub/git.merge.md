@@ -81,3 +81,13 @@ git mergetool で編集後にできる backup file
 
 
 
+## merge squash, merge rebase
+
+wip:
+
+
+
+
+
+
+

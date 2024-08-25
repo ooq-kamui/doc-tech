@@ -129,6 +129,14 @@ cnf fish fnc の既存のを削除して, try re, で, success
 
 
 
+## git
+
+```
+ln -s ~/wrk/cnf/git/.gitconfig ~/
+```
+
+
+
 ## fd
 
 
@@ -147,20 +155,25 @@ cnf fish fnc の既存のを削除して, try re, で, success
 
 
 
-
-
-## git
-
-### cnf push
-
-
-
-
-
-
 ## nginx
 
+ref :
+https://kinsta.com/jp/knowledgebase/install-nginx/
 
+
+```
+sudo yum install epel-release
+```
+
+```
+sudo yum install nginx
+```
+
+boot 時に自動的に起動
+
+```
+sudo systemctl start nginx sudo systemctl enable nginx
+```
 
 
 
