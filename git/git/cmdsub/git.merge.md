@@ -73,6 +73,7 @@ git mergetool
 下 : 作業中のファイル
 
 
+
 ## `.orig` file とは
 
 git mergetool で編集後にできる backup file

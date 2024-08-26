@@ -8,7 +8,13 @@
 
 - ある commit の file を worktree  へ取り出す
 
-なのだが, 実質の用途としては 下記
+なのだが, 実質の用途としては,
+
+
+- branch を指定した場合
+  - branch 切り替え
+    - 指定 branch の commit head の 全 file が worktree に取り出される
+    - 現在の branch も 指定 branch になる
 
 
 - commit を指定した場合
@@ -16,12 +22,6 @@
 
   - 指定 commit が head の場合
     - worktree の file 変更 を破棄
-
-
-- branch を指定した場合
-  - branch 切り替え
-    - 指定 branch の commit head の 全 file が worktree に取り出される
-    - 現在の branch も 指定 branch になる
 
 
 
@@ -72,6 +72,7 @@ git checkout -- .
 ```
 
 
+
 ### file の worktree で修正した内容を破棄して, 現在の commit ( head ) の内容に戻す
 
 ```
@@ -89,6 +90,8 @@ git checkout HEAD -- file_path
 ```
 git checkout commit01 -- file01
 ```
+
+commit_id は 同 branch history になくても, 同 repository のものであれば可
 
 
 
