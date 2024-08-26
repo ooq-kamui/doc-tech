@@ -29,7 +29,7 @@ git commit --amend
 ### 直前の commit を破棄
 
 ```
-git reset --soft HEAD^
+git reset --soft HEAD~
 ```
 
 `git reset` は `HEAD` の位置を戻すこと

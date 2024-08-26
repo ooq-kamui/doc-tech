@@ -76,7 +76,7 @@ git diff branch1 branch2
 ### commit prv と commit latest の diff
 
 ```
-git diff HEAD^..HEAD
+git diff HEAD~..HEAD
 ```
 
 

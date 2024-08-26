@@ -8,12 +8,7 @@ cherry-pick
 
 
 merge squash, merge rebase
-- git rebase 復習
-
-
-head
-- head^ > head~ なのでは疑惑
-  - そうなら修正
+- git rebase, learn re
 
 
 cmdsub h1 tidy
