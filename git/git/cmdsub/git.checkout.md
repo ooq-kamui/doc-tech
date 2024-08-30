@@ -21,7 +21,7 @@
   - ある commit の file を worktree  へ取り出す
 
   - 指定 commit が head の場合
-    - worktree の file 変更 を破棄
+    - worktree の file の 変更 を 破棄
 
 
 
@@ -57,12 +57,28 @@ git checkout -f branch_name
 git checkout -- file_path
 ```
 
+or
+
+```
+git checkout HEAD -- file_path
+```
+
+^未確認
+
 
 ### ディレクトリ配下の変更を 取り消す
 
 ```
 git checkout -- dir_path
 ```
+
+or
+
+```
+git checkout HEAD -- dir_path
+```
+
+^未確認
 
 
 ### すべての変更を取り消す
@@ -71,14 +87,13 @@ git checkout -- dir_path
 git checkout -- .
 ```
 
-
-
-### file の worktree で修正した内容を破棄して, 現在の commit ( head ) の内容に戻す
+or
 
 ```
-git checkout HEAD -- file_path
+git checkout HEAD -- .
 ```
 
+^未確認
 
 
 ## 特定 commit の file 取り出し 用途
