@@ -1,5 +1,5 @@
 
-# array
+# array  -  javascript
 
 
 ## 変数が配列かどうか
