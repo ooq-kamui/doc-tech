@@ -11,6 +11,15 @@ cnt = len(a)
 ```
 
 
+## add  -  1要素 を追加
+
+```
+list01 = []
+
+list01.append('a')
+```
+
+
 ## list の末尾に 別の list を連結 ( 結合 )
 
 ```

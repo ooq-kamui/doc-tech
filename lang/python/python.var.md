@@ -10,30 +10,43 @@ list ( ary ) は ref
 
 ## var scope
 
-何も指定しないと local になる
+### local
 
-関数内で global を使用する場合に global と指定する
-
-php と同じ
-
-
-ex
+とくに記述しなければ local
 
 ```
 a = 0
 
-def tst():
-  global a
+def func01():
   a = 1
 
 
-tst()
-print(a)
-# => 1
+print(a) # 0
 ```
 
 
-## var type
+### global
+
+```
+a = 0
+
+def func01():
+  global a
+  a = 1
+
+print(a) # 1
+```
+
+
+### block scope
+
+python に block scope はありません
+
+
+
+## type の確認
+
+`type()` を使用
 
 ```
 a = 1

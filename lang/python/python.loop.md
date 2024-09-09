@@ -10,4 +10,16 @@ wip:
 ```
 
 
+## while
+
+```
+wip:
+```
+
+
+## `enumerate()`
+
+lua でいう `pairs()` のこと
+
+
 
