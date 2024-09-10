@@ -40,27 +40,27 @@ git diff
 ```
 
 
-### work tree と HEAD ( repo ltst ) の diff
+### work tree と HEAD ( repo latest ) の diff
 
 ```
 git diff HEAD
 ```
 
 
-### stage と HEAD ( repo ltst ) の diff
+### staged と HEAD ( repo latest ) の diff
 
 ```
 git diff --staged
 ```
 
 
-### index と commit latest の diff
+### index ( staged ? ) と commit latest の diff
 
 ```
 git diff --cached
 ```
 
-wip : 1つ上のと違いは.. ??
+wip: 1つ上のと違いは.. ?? ( 同じでは ? )
 
 
 ### branch1 と branch2 の diff
@@ -70,7 +70,7 @@ git diff branch1 branch2
 ```
 
 `clone` 直後などの場合, `git switch` するなどしたあとでないと,
-できないときあり
+できない ( ときがあった )
 
 
 ### commit prv と commit latest の diff
@@ -87,7 +87,7 @@ git diff SHA1..SHA2
 ```
 
 
-### local branch と remote branch の diff
+### branch local と branch remote の diff
 
 ```
 git diff main origin/main

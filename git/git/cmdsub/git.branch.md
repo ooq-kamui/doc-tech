@@ -58,14 +58,18 @@ git checkout branch_name
 ```
 
 
-## local branch を削除
+## branch local を削除
 
 ```
 git branch -d branch_name
 ```
 
+```
+-d  branch_name が push 済 の場合のみ削除する
+```
 
-## remote branch を削除
+
+## branch remote を削除
 
 ```
 git push origin --delete branch_name

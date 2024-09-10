@@ -34,55 +34,71 @@ vi .gitignore
 
 ---
 
+
 ## format
 
-comment
+### comment
 
 ```
 # で始まる行はcomment
 ```
 
-配下すべての file.txt ファイル
+
+### 配下すべての file.txt ファイル
 
 ```
 file.txt
 ```
 
-配下すべての dir/ ディレクトリ の配下
+
+### 配下すべての dir/ ディレクトリ の配下
 
 ```
 dir/
 ```
 
-wild card 指定で 指定できる
+
+### wild card 指定で 指定できる
 
 ```
 hoge.*.ogg
 ```
 
-拡張子で除外
+
+### 拡張子で除外
 
 ```
 *.ogg
 ```
 
-配下のすべての dir/ 配下の特定拡張子のファイル
+
+### 配下のすべての dir/ 配下の特定拡張子のファイル
 
 ```
 dir/**/*.ts
 ```
 
-絶対パスで file 指定
+
+### 絶対パスで file 指定
 
 ```
 /aaa/bbb/ccc/file.txt
 ```
 
-絶対パスで dir 指定
+
+### 絶対パスで dir 指定
 
 ```
 /aaa/bbb/ccc/dir/
 ```
+
+
+### ただし, この file は 除外しない
+
+```
+!/file.txt
+```
+
 
 
 ---
