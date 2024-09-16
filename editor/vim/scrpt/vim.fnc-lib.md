@@ -77,7 +77,7 @@ reverse()         文字列内の文字の順序を逆にする
 substitute()      パターンにマッチする文字列を置換
 submatch()        ":s" と substitute() の中で部分マッチを得る
 strpart()         文字列の一部分を得る(バイト数指定)
-strcharpart()     文字のインデックスで指定された部分文字列を得る
+strcharpart()     str の idx , len で指定された部分文字列を得る
 
 slice()           Vim9 script での文字インデックスを用いて, 文字列のスライスを取る
 
