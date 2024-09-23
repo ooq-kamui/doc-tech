@@ -169,10 +169,16 @@ sudo yum install epel-release
 sudo yum install nginx
 ```
 
+launch
+
+```
+sudo systemctl start nginx
+```
+
 boot 時に自動的に起動
 
 ```
-sudo systemctl start nginx sudo systemctl enable nginx
+sudo systemctl enable nginx
 ```
 
 
