@@ -48,73 +48,61 @@ git checkout -f branch_name
 ```
 
 
+### option
+
+```
+-b  新しい branch を作成, つまり, branch 作成もできる
+```
+
+
 
 ## worktree 破棄 用途
 
-### ファイルの変更を 取り消す
+### HEAD から取り出す
 
-```
-git checkout -- file_path
-```
-
-or
+#### worktree の file の変更を 取り消して, HEAD の file にする
 
 ```
 git checkout HEAD -- file_path
 ```
 
-^未確認
 
-
-### ディレクトリ配下の変更を 取り消す
-
-```
-git checkout -- dir_path
-```
-
-or
+#### worktree の dir 配下の変更を 取り消して, HEAD の file 群にする
 
 ```
 git checkout HEAD -- dir_path
 ```
 
-^未確認
 
-
-### すべての変更を取り消す
-
-```
-git checkout -- .
-```
-
-or
+#### worktree の すべての変更を取り消して, HEAD の file 群にする
 
 ```
 git checkout HEAD -- .
 ```
 
-^未確認
+
+### staged から取り出す
+
+#### worktree の file の変更を 取り消して, staged の file にする
+
+```
+git checkout -- file_path
+```
+
+つまり, commit 指定の省略が staged から取り出すこと
 
 
-## 特定 commit の file 取り出し 用途
+### 特定 commit から取り出す
 
-### commit01 の file01 を worktree へ取り出す
+cmt_id01 の file01 を worktree へ取り出す
 
 現在の worktree の file01 は破棄される
 
 ```
-git checkout commit01 -- file01
+git checkout cmt_id01 -- file01
 ```
 
 commit_id は 同 branch history になくても, 同 repository のものであれば可
-
-
-
-## option
-
-```
--b  新しい branch を作成
-```
 
 
 
