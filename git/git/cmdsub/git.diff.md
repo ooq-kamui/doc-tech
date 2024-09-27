@@ -33,7 +33,7 @@ git diff old new
 
 ## 各種 diff 表示
 
-### work tree と stage の diff
+### work tree と staged の diff
 
 ```
 git diff
