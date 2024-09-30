@@ -89,7 +89,7 @@ git checkout HEAD -- .
 git checkout -- file_path
 ```
 
-つまり, commit 指定の省略が staged から取り出すこと
+つまり, commit 指定の省略は staged から取出し
 
 
 ### 特定 commit から取り出す

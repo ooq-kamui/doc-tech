@@ -21,40 +21,23 @@ sudo yum install epel-release
 sudo yum install nginx
 ```
 
-launch
+
+## launch
 
 ```
 sudo systemctl start nginx sudo systemctl enable nginx
 ```
 
 
-## sakura の場合
+## sakura vps の場合
 
-sakura の場合, パケットフィルター の web を解放しましょう
+パケットフィルター の web を解放する
 
 
-
-## setting 反映
+## setting の反映
 
 ```
 sudo nginx -s reload
-```
-
-
-## sub domain
-
-/etc/nginx/conf.d/virtualhost.conf
-
-```
-server {
-    listen 80;
-    server_name sub.domain-name.com;
-    root /usr/share/nginx/html/sub;
-
-    location / {
-      index index.html;
-    }
-}
 ```
 
 

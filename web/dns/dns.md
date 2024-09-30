@@ -1,26 +1,37 @@
 
 # dns
 
-
-## sub domain setting
-
-onamae.com で取得した `smpl.jp` の
-sub domain `ex.smpl.jp` に sakura の vps を設定する
-場合
+ここで domain はすべて onamae.com で取得しているものとする
 
 
-### onamae.com
+## domain main
+
+### sakura server
 
 wip:
 
 
-### sakura
+
+### sakura vps
 
 wip:
 
-`menu > dns` 設定 の画面へいく
 
 
+## domain sub
+
+### sakura vps
+
+#### sakura vps の設定
+
+dns server 名 を確認する
+
+`menu > dns` 設定 の画面へいって, 確認
+
+
+#### onamae.com の設定
+
+wip:
 
 
 
