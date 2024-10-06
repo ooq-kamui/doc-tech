@@ -42,6 +42,32 @@ sudo openssl genrsa -out server.key 2048
 
 ### key から csr を作成
 
+次のものを訊かれるので考えておく
+
+- `Country Name (2 letter code) [XX]` : `JP`
+- `State or Province Name (full name) []` : `Tokyo`
+- `Locality Name (eg, city) [Default City]` : `Komae-shi`
+- `Organization Name (eg, company) [Default Company Ltd]` : `ooq-kamui`
+- `Organizational Unit Name (eg, section) []` :
+- `Common Name (eg, your name or your server's hostname) []` : `ooq.jp`
+- `Email Address []` :
+- `A challenge password []` : `xxx`
+- `An optional company name []` :
+
+
+sakura で必要なのは次
+
+- 国名(C) : `JP`
+- 都道府県名(S/ST) : `Tokyo`
+- 市町村名(L) : `Komae-shi`
+- 組織名(O) : `ooq-kamui`
+- コモンネーム(CN), 実際に接続する URL : `ooq.jp`
+
+https://help.sakura.ad.jp/ssl/2327/?_gl=1*14itm43*_gcl_au*MTE0MDkzODAwOS4xNzI3MDQ0NTgz#heading-1
+
+
+command
+
 ```
 sudo openssl req -new -key server.key -out server.csr
 ```
@@ -49,7 +75,7 @@ sudo openssl req -new -key server.key -out server.csr
 ex
 
 ```
-_ sudo openssl req -new -key server.key -out server.csr 
+_ sudo openssl req -new -key server.key -out server.csr
 You are about to be asked to enter information that will be incorporated
 into your certificate request.
 What you are about to enter is what is called a Distinguished Name or a DN.
@@ -72,7 +98,9 @@ An optional company name []:
 _ 
 ```
 
-pass phrase を訊かれる場合は key の pass phrase を入力
+`A challenge password` は 必須入力
+
+`pass phrase` を訊かれる場合は key の `pass phrase` を入力
 
 
 
