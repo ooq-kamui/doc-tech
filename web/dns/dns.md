@@ -1,37 +1,37 @@
 
 # dns
 
-ここで domain はすべて onamae.com で取得しているものとする
+ここで domain はすべて onamae.com で取得
 
 
-## domain main
+## main domain の dns 設定
 
-### sakura server
+### server が sakura server の場合
+
+wip:
+
+
+### server が sakura vps の場合
 
 wip:
 
 
 
-### sakura vps
+## sub domain の設定
 
-wip:
+### server が sakura vps の場合
 
+onamae.com console で
+sub domain とその dns を設定する
 
+dns の値は ?
 
-## domain sub
+sakura console > ネームサーバーサービス
+に sub domain ( ゾーン ? ) を追加する
 
-### sakura vps
+ゾーン をクリック, で dns が表示される
 
-#### sakura vps の設定
-
-dns server 名 を確認する
-
-`menu > dns` 設定 の画面へいって, 確認
-
-
-#### onamae.com の設定
-
-wip:
+この dns を onamae.com の sub domain の console で設定する
 
 
 

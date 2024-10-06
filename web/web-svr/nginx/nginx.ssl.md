@@ -2,37 +2,68 @@
 # nginx  -  ssl
 
 
+## 基本
+
+一般的に site を ssl 化するときに必要なのは, 次の file
+
+- key
+- csr
+- crt
+
+
+作成方法は ssl の ページを参照
+
+
+
+## nginx の設定
+
+### main domain の場合
+
+上記の file を所定の dir に置く
+
+ここでは 下記の dir とする
+
+```
+/etc/nginx/ssl/
+```
+
+conf file
+
+```
+/etc/nginx/nginx.conf
+```
+
+内容を編集
+
+```
+server {
+    listen 443 ssl;
+    ssl_certificate     /etc/nginx/ssl/server.crt;
+    ssl_certificate_key /etc/nginx/ssl/server.key;
+}
+```
+
+nginx を再起動
+
+```
+sudo nginx -s reload
+```
+
+or
+
+```
+sudo systemctl restart nginx
+```
+
+
+
 ## ref
 
 https://cn.teldevice.co.jp/blog/p39750/
 
 https://www.bestssl.net/faq/install-nginx/
 
-https://zenn.dev/sakura_and_kina/articles/97d89dcda40de8
-
-
-## setting
-
-wip:
-
-
-## sub domain
-
-wip:
-
-/etc/nginx/conf.d/virtualhost.conf
-
-```
-server {
-    listen 80;
-    server_name sub.domain-name.com;
-    root /usr/share/nginx/html/sub;
-
-    location / {
-      index index.html;
-    }
-}
-```
+https://qiita.com/clown0082/items/551d7c081ff6b41b1717
 
 
 

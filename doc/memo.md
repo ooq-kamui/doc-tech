@@ -2,22 +2,9 @@
 # doc-tech
 
 
-## dns
-
-sub domain setting
+## this doc up
 
 
-## ssl
-
-- 自己証明書
-  - eng ?
-
-
-## nginx ssl
-
-nginx ssl setting
-
-wip:
 
 
 ## vim
