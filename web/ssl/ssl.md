@@ -4,7 +4,8 @@
 
 ## 基本
 
-一般的に site を ssl 化するときに必要なのは, 次
+一般的に site を ssl 化するときに必要なのは,
+次の file
 
 - key
   - 秘密鍵, pem などとも呼ばれる
@@ -15,12 +16,14 @@
 
 
 
-## 自己証明書 の作成
+## 自己証明書 で作成する場合
 
 上記を openssl で 作成する
 
 
 ### 作業 dir へ移動
+
+nginx の所定 dir で記載
 
 ```
 sudo mkdir /etc/nginx/ssl
@@ -65,7 +68,6 @@ sakura で必要なのは次
 
 https://help.sakura.ad.jp/ssl/2327/?_gl=1*14itm43*_gcl_au*MTE0MDkzODAwOS4xNzI3MDQ0NTgz#heading-1
 
-
 command
 
 ```
@@ -85,10 +87,10 @@ If you enter '.', the field will be left blank.
 -----
 Country Name (2 letter code) [XX]:JP
 State or Province Name (full name) []:Tokyo
-Locality Name (eg, city) [Default City]:
-Organization Name (eg, company) [Default Company Ltd]:
+Locality Name (eg, city) [Default City]:Komae-shi
+Organization Name (eg, company) [Default Company Ltd]:ooq-kamui
 Organizational Unit Name (eg, section) []:
-Common Name (eg, your name or your server's hostname) []:
+Common Name (eg, your name or your server's hostname) []:ooq.jp
 Email Address []:
 
 Please enter the following 'extra' attributes
