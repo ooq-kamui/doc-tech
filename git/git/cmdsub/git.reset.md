@@ -4,31 +4,45 @@
 
 ## 基本
 
-head の位置を 戻す
+HEAD の位置を 戻す
 
 戻す位置 ( commit ) は 引数で指定
 
 このとき, worktree , staged の状態をどうするかも 指定できる
 
 
-( 人間の ) 主な用途
+### 人間的な 主な用途
 
 - 直近の commit を破棄する
+
+
+
+### notice
+
+指定する commit を `HEAD` にした場合,
+`HEAD` の位置は変えずに,
+`--hard`, `--mixed` の指定によって, worktree, staged の file を HEAD の内容に戻す,
+という使いかたもできるが,
+
+そういう使いかたはしないほうが, 無難
+
+混乱が少ない
+
+そういうときは, `git restore` を使う
 
 
 
 ## option
 
 ```
---soft  : head を 指定した commit にする ( 戻す )
-          worktree, staged は 変更しない
+--soft  : HEAD を 指定した commit にする ( 戻す )
 
---hard  : head を 指定した commit にする ( 戻す )
+--hard  : HEAD を 指定した commit にする ( 戻す )
           worktree, staged も 変更
             変更していた場合, 破棄され
             指定した commit の内容 になる
 
---mixed : head を 指定した commit にする ( 戻す )
+--mixed : HEAD を 指定した commit にする ( 戻す )
           worktree は変更しない  
           staged   は変更
             変更していた場合, 破棄され
@@ -41,7 +55,7 @@ option なし : --mixed
 
 ## --soft
 
-head を 指定した commit にする ( 戻す )  
+HEAD を 指定した commit にする ( 戻す )  
 worktree, staged は 変更しない
 
 ```
@@ -51,7 +65,7 @@ git reset --soft commit01
 
 ### --hard
 
-head を 指定した commit にする ( 戻す )  
+HEAD を 指定した commit にする ( 戻す )  
 worktree, staged も 変更  
   変更していた場合, 破棄され  
   指定した commit の内容 になる
@@ -63,7 +77,7 @@ git reset --hard commit01
 
 ### --mixed
 
-head を 指定した commit にする ( 戻す )  
+HEAD を 指定した commit にする ( 戻す )  
 worktree は変更しない  
 staged   は変更  
   変更していた場合, 破棄され  
@@ -77,6 +91,7 @@ git reset --mixed commit01
 
 ## 事例
 
+
 ### local で, 直前の commit を 破棄
 
 ```
@@ -88,9 +103,9 @@ git reset --soft HEAD~
 ```
 =  worktree, staged の状態はそのままで, HEAD を 1つ前の commit に戻す
 
-=  --soft で HEAD を 1つ前の commit の head にする ( 戻す )
+=  --soft で worktree, staged は 変更しない
 
-HEAD~ : 現在の head ( の commit ) の 1つ前の commit
+HEAD~ : 現在の HEAD ( の commit ) の 1つ前の commit
 ```
 
 
