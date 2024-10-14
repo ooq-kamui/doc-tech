@@ -15,13 +15,7 @@
   - デジタル証明書, サーバー証明書 などとも呼ばれる
 
 
-
-## 自己証明書 で作成する場合
-
-上記を openssl で 作成する
-
-
-### 作業 dir へ移動
+## 作業 dir へ移動
 
 nginx の所定 dir で記載
 
@@ -34,7 +28,7 @@ cd /etc/nginx/ssl
 ```
 
 
-### key の作成
+## key の作成
 
 ```
 sudo openssl genrsa -out server.key 2048
@@ -43,7 +37,7 @@ sudo openssl genrsa -out server.key 2048
 方式によっては pass phrase を入力して設定
 
 
-### key から csr を作成
+## key から csr を作成
 
 次のものを訊かれるので考えておく
 
@@ -105,14 +99,23 @@ _
 `pass phrase` を訊かれる場合は key の `pass phrase` を入力
 
 
+## key, csr から crt を作成
 
-### key, csr から crt を作成
+### 自己証明書 で作成する場合
+
+上記を openssl で 作成する
 
 ```
 sudo openssl x509 -days 3650 -req -signkey server.key -in server.csr -out server.crt
 ```
 
 pass phrase を訊かれる場合は key の pass phrase を入力
+
+
+### sakura などで作成する場合
+
+console などから,
+csr を 送信して, crt を得る
 
 
 ## ref

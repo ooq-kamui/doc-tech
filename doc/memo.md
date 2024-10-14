@@ -2,12 +2,6 @@
 # doc-tech
 
 
-## ssl
-
-slf cirtificate
-- mod
-
-
 ## vim
 
 regex
