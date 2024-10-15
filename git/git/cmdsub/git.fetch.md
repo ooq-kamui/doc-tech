@@ -1,10 +1,8 @@
 
-# git
+# git fetch
 
 
-## git fetch
-
-### 基本
+## 基本
 
 リモートから最新内容をローカルに取り込む
 
@@ -22,25 +20,29 @@ merge までは行わない
 
 
 
-### すべてを取り込む
+## すべてを取り込む
+
 ```
 git fetch
 ```
 
 
-### `repository : all` を取り込む
+## `repository : all` を取り込む
+
 ```
 git fetch --all
 ```
 
 
-### `repository : origin`, `branch : all` を取り込む
+## `repository : origin`, `branch : all` を取り込む
+
 ```
 git fetch origin
 ```
 
 
-### `repository : origin`, `branch : master` を取り込む
+## `repository : origin`, `branch : master` を取り込む
+
 ```
 git fetch origin master
 ```
@@ -50,7 +52,7 @@ fetch を行っただけでは 他人の更新はプログラムへは取り込�
 そこまで行うには merge でマージ作業を行う
 
 
-### tag を取り込む
+## tag を取り込む
 
 ```
 git fetch --tags
@@ -61,7 +63,7 @@ git fetch -t
 ```
 
 
-### branch の削除 を取り込む
+## branch の削除 を取り込む
 
 remote repository から branch が削除されても,
 local repository には origin/branch1 といった形で branch が残ります
@@ -77,7 +79,7 @@ git fetch -p
 ```
 
 
-### fetch とpull の違いについて
+## fetch とpull の違いについて
 
 pull は 内部で
 

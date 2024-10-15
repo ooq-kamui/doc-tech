@@ -1,5 +1,5 @@
 
-# git  -  alias
+# git alias
 
 
 ## 基本

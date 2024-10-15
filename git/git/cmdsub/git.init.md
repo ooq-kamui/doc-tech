@@ -184,12 +184,10 @@ git commit -a -m "[msg]"
 
 ## worktree の変更をなしにする
 
-repository から戻す
+staged から戻す
 
 ```
 git checkout filename
-
-  todo ... 詳細を追記
 ```
 
 

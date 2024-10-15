@@ -2,6 +2,17 @@
 # git diff
 
 
+## 基本
+
+### 同種のものを引数で指定する場合
+
+`old` `new` の順
+
+```
+git diff old new
+```
+
+
 ## 概要のみ表示 ( file の中身を表示しない )
 
 ### 差分情報のみを表示
@@ -16,19 +27,6 @@ git diff --stat
 ```
 git diff --name-only
 ```
-
-
-
-## 基本
-
-### 同種のものを引数で指定する場合
-
-`old` `new` の順
-
-```
-git diff old new
-```
-
 
 
 ## 各種 diff 表示

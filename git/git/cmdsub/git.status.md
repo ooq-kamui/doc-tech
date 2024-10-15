@@ -39,7 +39,7 @@ git status -- short
 
 ## 補足
 
-`git status` はいったん 上記くらい の理解でよいと思います
+`git status` は いったん 上記くらい の理解でよい と思います
 
 
 

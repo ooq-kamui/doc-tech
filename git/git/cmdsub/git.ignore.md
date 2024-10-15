@@ -2,7 +2,7 @@
 # .gitignore
 
 
-## .gitignore
+## 確認方法
 
 ### ignore されているかを確認
 
@@ -20,19 +20,15 @@ git ls-files --other --ignored --exclude-standard
 ```
 
 
----
+## 基本
 
-
-.gitignore file cre
+### .gitignore file cre
 
 ```
 vi .gitignore
 ```
 
 管理対象から除外する file, dir を 記述して save
-
-
----
 
 
 ## format
@@ -100,9 +96,6 @@ dir/**/*.ts
 ```
 
 
-
----
-
 ## あとから .gitignore に 追加して, 管理対象から除外する
 
 .gitignore に file, dir を 追記
@@ -116,8 +109,6 @@ vi .gitignore
 
 このため, 下記の `管理対象から除外` を実行する
 
-
----
 
 ## 管理対象から除外
 
@@ -139,10 +130,12 @@ git rm --cached -r dirname
 commit, push まで実行する
 
 
+```
 > [!!]  
 > 先に file を del して push してしまった場合  
 > 上記の方法でも github の history からは消えない ( 気がする )
 > これをちゃんとする方法を調べる
+```
 
 
 

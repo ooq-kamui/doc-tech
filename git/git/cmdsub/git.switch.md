@@ -19,6 +19,9 @@ git branch
 
 ```
 git fetch
+```
+
+```
 git branch -a
 ```
 
