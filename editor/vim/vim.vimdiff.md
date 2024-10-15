@@ -10,6 +10,17 @@ ctl-w h : mv l
 ```
 
 
+## merge
+
+```
+差分箇所で dp  cursor のあるほうの内容を もう一方のファイルに反映
+差分箇所で do  cursor のないほうの内容を もう一方のファイルに反映
+
+dp : diff put
+do : diff obtain
+```
+
+
 ## color
 
 vimdiff の color setting

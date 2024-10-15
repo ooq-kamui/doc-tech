@@ -22,13 +22,13 @@
 
 
 
-
-
 ## 補足
 
 ```
 git fetch
+```
 
+```
 git rebase
 ```
 
@@ -41,7 +41,6 @@ git pull --rebase
 は同じ
 
 notice: 上記は大雑把 
-
 
 
 
