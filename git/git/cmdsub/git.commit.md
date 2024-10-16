@@ -1,8 +1,7 @@
 
 # git commit
 
-index の内容を
-repo に反映する
+staged の内容を repo に反映する
 
 
 ## comment 付きで commit

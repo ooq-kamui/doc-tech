@@ -15,12 +15,12 @@
 
 ## 基本概念
 
-### file 領域 ( ? )
+### 保存 領域 ( ? )
 
 local だけで
 
 - worktree   : 作業ファイル ( 開発するときに修正するファイル )
-- index      : add    で追加される
+- staged     : add    で追加される
 - repository : commit で追加される
 
 の 3つがある

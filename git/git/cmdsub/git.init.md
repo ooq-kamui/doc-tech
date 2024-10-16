@@ -26,7 +26,7 @@ commit 対象ファイルを commit
 git commit -m "comment"
 ```
 
-追加した index ( ファイルの変更点 ) をGitHubに作成
+追加した staged ( ファイルの変更点 ) をGitHubに作成
 
 ```
 git remote add origin github-url
@@ -43,13 +43,13 @@ git push origin master
 
 修正 file の push まで
 
-index に add ( commit 対象 file にする )
+staged に add ( commit 対象 file にする )
 
 ```
 git add xxx.txt
 ```
 
-index に add された file ( commit 対象 file ) を commit
+staged に add された file ( commit 対象 file ) を commit
 
 ```
 git commit -m "comment"
@@ -128,7 +128,7 @@ git commit ???
 ```
 
 
-### 追加した index  ( ファイルの変更点 ) を github に作成
+### 追加した staged  ( ファイルの変更点 ) を github に作成
 
 github の repository と紐づける
 
@@ -172,7 +172,7 @@ git status
 ```
 
 commit 済 の file をさらに編集したときに  
-commit 済 の file だけを 再度 index に add, commt する
+commit 済 の file だけを 再度 staged に add, commt する
 
 ```
 git commit -a -m "[msg]"

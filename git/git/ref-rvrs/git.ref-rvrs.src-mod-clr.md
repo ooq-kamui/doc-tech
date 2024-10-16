@@ -13,15 +13,15 @@ https://www.atlassian.com/ja/git/tutorials/undoing-changes
 
 
 - git restore
-  - worktree / index の file を head の内容に戻す
+  - worktree / staged の file を HEAD の内容に戻す
   - 実行された commit を修正したりするわけではない
-  - 対象 commit を 現在の head とした git checkout, のようなもの
+  - 対象 commit を 現在の HEAD とした git checkout, のようなもの
   - file 個別指定 できる
     - というか, file 個別指定 しかできない ?
       - 全体を戻したい場合は reset を使用 ( たぶん )
 
 - git reset
-  - 指定した commit の状態へ, head, worktree, index を戻す
+  - 指定した commit の状態へ, HEAD, worktree, staged を戻す
   - 実行された commit を修正したりするわけではない
 
 

@@ -9,11 +9,11 @@ https://git-scm.com/docs/git-status
 
 - staging されている file  
   `>` add 済, commit 未 の file  
-  index と head ( repo ltst ) に違いがある file
+  staged と HEAD ( repo ltst ) に違いがある file
 
 - staging されていない file  
   `>` add 未 file ( mod / del )  
-  worktree と index に違いがある file
+  worktree と staged に違いがある file
 
 - 未追跡の file  
   `>` add 未 file ( new )  

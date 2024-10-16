@@ -4,7 +4,7 @@
 
 ## 基本
 
-別の branch ( の commit head ) を 現在の branch へ取り込む
+別の branch ( の commit HEAD ) を 現在の branch へ取り込む
 
 ```
 git merge branch_other

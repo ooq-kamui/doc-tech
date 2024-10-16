@@ -13,14 +13,14 @@
 
 - branch を指定した場合
   - branch 切り替え
-    - 指定 branch の commit head の 全 file が worktree に取り出される
+    - 指定 branch の commit HEAD の 全 file が worktree に取り出される
     - 現在の branch も 指定 branch になる
 
 
 - commit を指定した場合
   - ある commit の file を worktree  へ取り出す
 
-  - 指定 commit が head の場合
+  - 指定 commit が HEAD の場合
     - worktree の file の 変更 を 破棄
 
 

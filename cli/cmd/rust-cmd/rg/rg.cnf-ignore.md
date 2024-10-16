@@ -1,6 +1,7 @@
 
 # rg  -  ignore 除外 設定 について
 
+
 ## .ignore file での設定
 
 ```

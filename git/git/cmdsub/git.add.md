@@ -1,7 +1,7 @@
 
 # git add
 
-worktree から index に file を追加する
+worktree から staged に file を追加する
 
 
 ## 配下のすべてのファイルを add

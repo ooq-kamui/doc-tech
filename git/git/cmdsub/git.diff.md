@@ -52,7 +52,7 @@ git diff --staged
 ```
 
 
-### index ( staged ? ) と commit latest の diff
+### staged と commit latest の diff
 
 ```
 git diff --cached
